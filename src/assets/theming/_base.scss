@@ -35,14 +35,11 @@ body {
   height: 100vh;
   line-height: 127.5%;
   min-width: 300px;
-  margin: 0 1.6em 0 1.6em;
+  margin: 0 1em;
 
   @include breakpoint-sm {
     font-size: 2.3rem;
-  }
-
-  @include breakpoint-xxs {
-    font-size: 2.1em;
+    margin: 0 1.6em 0 1.6em;
   }
 
   footer {
@@ -130,7 +127,6 @@ footer span {
 
 nav ul li {
   display: inline-block;
-  font-size: 2rem;
 
   + li {
     margin-left: 1.2rem;
@@ -150,76 +146,6 @@ nav ul li {
   }
 }
 
-.sr-only {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
-}
 
-.logo {
-  font-family: $accent-font;
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-.logo a {
-  svg {
-    max-height: 65px;
-    max-width: 65px;
-
-    g {
-      path {
-        transition: all ease-in-out 0.2s;
-      }
-    }
-
-    @include breakpoint-md {
-      max-height: 150px;
-      max-width: 150px;
-    }
-  }
-}
-
-// logo hoverstate dropshadow
-.logo a:hover {
-  svg {
-    g {
-      path {
-        fill: var(--text-color-link) !important;
-        transition: all ease-in-out 0.2s;
-      }
-    }
-  }
-}
-
-.newspaper-svg {
-  width: fit-content;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-
-  svg {
-    width: 255px;
-    height: 170px;
-    margin-right: auto;
-  }
-}
-
-.svg-color {
-  svg {
-    g {
-      path {
-        fill: var(--text-color) !important;
-        stroke: var(--text-color) !important;
-      }
-    }
-  }
-}
 
 
