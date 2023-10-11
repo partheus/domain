@@ -1,0 +1,47 @@
+article {
+  .category {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 1rem;
+    padding: .4rem 1rem;
+    border: 1px solid var(--text-color-link);
+    border-radius: 6px;
+    line-height: 1;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--text-color-link);
+      color: var(--background-color);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  small {
+    display: inline-block;
+    margin: 0.5em 0;
+  }
+
+  p {
+    + * {
+      margin-top: 1em;
+    }
+
+    //  make the first letter of each paragraph capital
+    &:first-of-type:first-letter {
+      font-size: 1.75em;
+    }
+  }
+
+  h4 {
+    font-weight: normal;
+    font-variant: all-small-caps;
+    font-size: 95%;
+  }
+}
+
+.article-separator {
+  margin-bottom: 2rem;
+  opacity: 50%;
+  max-width: 60ch;
+}

@@ -1,0 +1,41 @@
+
+$accent-font: 'Besley', serif;
+$main-font: 'EB Garamond', serif;
+
+/* Theme colors */
+:root {
+  --background-color: #fffcf6;
+  --text-color: #170808;
+  --text-color-link: #d21687;
+  --text-color-link-active: #012bb4;
+  --text-color-link-visited: #8c0762;
+  --text-color-link-hover: #6712c5;
+
+  --syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #170808;
+    --text-color: #fffcf6;
+    --text-color-link: #f345aa;
+    --text-color-link-active: #2cb6ff;
+    --text-color-link-visited: #a1377e;
+  }
+}
+
+
+// dark mode
+/* Initially hide the checkbox */
+.dark-mode-toggle input {
+  display: none;
+}
+
+/* Style the label as a button */
+.dark-mode-toggle label {
+  cursor: pointer;
+  background-color: #eee;
+  border: 2px solid #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+}

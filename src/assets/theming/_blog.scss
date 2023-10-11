@@ -1,0 +1,27 @@
+.article__item {
+  + .article__item {
+    margin-top: 1em;
+  }
+}
+
+.article__preview {
+  max-width: 80ch;
+
+  &__header {
+    margin-bottom: 0.25em;
+  }
+
+  &__description {
+    font-size: 90%;
+  }
+
+  p {
+    + * {
+      margin-top: 0.5em;
+    }
+
+    &:first-of-type:first-letter {
+      font-size: inherit;
+    }
+  }
+}
