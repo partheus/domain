@@ -38,7 +38,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/assets/social-image.jpg')
   eleventyConfig.addPassthroughCopy('./src/assets/icons')
   eleventyConfig.addPassthroughCopy('./src/assets/fonts')
-    eleventyConfig.addPassthroughCopy('./src/assets/favicons')
+  eleventyConfig.addPassthroughCopy('./src/assets/favicons')
+  eleventyConfig.addPassthroughCopy('./src/assets/img')
   eleventyConfig.addPassthroughCopy({
       'node_modules/svg-icon-sprite/dist/svg-icon-sprite.js': 'assets/svg-icon-sprite.js'
   })
@@ -49,6 +50,7 @@ module.exports = function(eleventyConfig) {
   /*=================*/
   eleventyConfig.addLayoutAlias('page', 'layouts/page')
   eleventyConfig.addLayoutAlias('article', 'layouts/article')
+  eleventyConfig.addLayoutAlias('base', 'layouts/base')
 
 
   /*=================*/
