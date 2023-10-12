@@ -38,6 +38,20 @@ article {
     font-variant: all-small-caps;
     font-size: 95%;
   }
+
+  img {
+    max-width: 40ch;
+    max-height: 30vh;
+    margin-right: auto;
+    transition: all 1s ease;
+    filter: hue-rotate(0);
+
+    @include breakpoint-sm-plus {
+      max-width: 60ch;
+      max-height: 40vh;
+    }
+  }
+
 }
 
 .article-separator {

@@ -1,0 +1,41 @@
+$spacing: (
+        sm: 1rem,
+        md: 3rem,
+        lg: 6rem,
+        xl: 10rem,
+) !default;
+
+@each $key, $unit in $spacing {
+  .my-#{$key} {
+    margin-top: $unit;
+    margin-bottom: $unit;
+  }
+
+  .mt-#{$key} {
+    margin-top: $unit;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: $unit;
+  }
+}
+
+
+/* Reusable class for displaying items in columns */
+.display-columns {
+  display: grid;
+  column-gap: 2em;
+  grid-template-columns: 1fr; /* 1 column for smaller screens */
+
+  &--two {
+    @include breakpoint-sm-plus {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
+    }
+  }
+
+  &--three {
+    @include breakpoint-sm-plus {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    }
+  }
+}

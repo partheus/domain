@@ -80,7 +80,6 @@ nav {
 
 main {
   flex: 0 1 100%;
-  margin: 1em 0 2em 0;
 
   &:not(nav) {
     ul {
@@ -97,6 +96,10 @@ main {
 
   nav ul {
     margin: .2em 0 2em 0;
+  }
+
+  @include breakpoint-md {
+    margin: 1em auto 2em 5em;
   }
 }
 
@@ -144,6 +147,10 @@ nav ul li {
     padding-bottom: 5px;
     transition: color 400ms;
   }
+}
+
+.accent-border-bottom {
+  border-bottom: 2px solid var(--accent-color);
 }
 
 
