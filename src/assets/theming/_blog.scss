@@ -1,5 +1,11 @@
 @import "base";
 
+.article {
+  @include breakpoint-md {
+    max-width: 72vw;
+  }
+}
+
 .article__item {
   + .article__item {
     margin-top: 1em;

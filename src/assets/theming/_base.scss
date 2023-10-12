@@ -122,6 +122,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include breakpoint-md {
+    max-width: 80vw;
+  }
+
+  @include breakpoint-lg {
+    max-width: 70vw;
+  }
 }
 
 footer span {
@@ -151,6 +159,7 @@ nav ul li {
 
 .accent-border-bottom {
   border-bottom: 2px solid var(--accent-color);
+  width: fit-content;
 }
 
 
