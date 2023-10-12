@@ -5,6 +5,12 @@ $spacing: (
         xl: 10rem,
 ) !default;
 
+@each $size, $value in $spacing {
+  .spacer--#{$size} {
+    margin: $value;
+  }
+}
+
 @each $key, $unit in $spacing {
   .my-#{$key} {
     margin-top: $unit;
