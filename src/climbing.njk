@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 2
 ---
 {% set taglist = collections.climbing | getFilterTagList %}
-<ul class="article__list">
+<ul class="article__list display-columns display-columns--two">
     {% for article in taglist | reverse %}
         <li class="article__item">
             <article class="article__preview">
