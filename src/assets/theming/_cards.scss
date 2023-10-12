@@ -13,16 +13,16 @@
     filter: hue-rotate(45deg);
   }
 
-  @include breakpoint-sm-plus() {
+  @include breakpoint-md {
     max-width: 30vw;
   }
 }
 
 .card__title {
-  background-color: var(--text-color-link);
+  border: var(--text-color-link-active) 2px solid;
   padding: 0.2em;
   margin-top: 10px;
-  color: var(--background-color);
+  color: var(--text-color);
 }
 
 .card:hover .card__title {
@@ -39,12 +39,16 @@
   transition: transform 0.3s; /* Add a smooth transition */
 
   &:hover {
-    transform: translateY(-10px); /* Adjust the value for the desired slide-up distance */
+    transform: translateY(-0.5rem); /* Adjust the value for the desired slide-up distance */
   }
 
   h3, p, .card-link {
     color: var(--background-color);
     transition: transform 0.3s; /* Apply the same transition duration to all elements */
+  }
+
+  a {
+    color: var(--background-color);
   }
 
   &:hover h3, &:hover p, &:hover .card-link {
