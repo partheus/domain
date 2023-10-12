@@ -10,7 +10,7 @@ eleventyComputed:
 ---
 <h4>Here are all entries tagged “{{ tag }}”:</h4>
 {% set taglist = collections[tag] | getFilterTagList %}
-<ul class="article__list">
+<ul class="display-columns display-columns--two article__list">
     {% for article in taglist | reverse %}
         <li class="article__item">
             <article class="article__preview">
@@ -20,4 +20,4 @@ eleventyComputed:
     {% endfor %}
 </ul>
 
-<h4>Go back to <a href="/blog/">all entries</a>.  Or visit <a href="/writing">the writing section</a>.</h4>
+<h4 class="mt-lg">Go back to <a href="/blog/">all entries</a>.  Or visit <a href="/writing">the writing section</a>.</h4>
