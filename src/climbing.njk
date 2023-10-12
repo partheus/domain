@@ -1,15 +1,18 @@
 ---
+layout: page
 title: "Climbing"
 description: "Places for words and tomes"
-tags:
-    - nav
+tags: nav
+eleventyNavigation:
+  key: climbing
+  order: 2
 ---
 {% set taglist = collections.climbing | getFilterTagList %}
 <ul class="article__list">
     {% for article in taglist | reverse %}
         <li class="article__item">
             <article class="article__preview">
-                {% include "../_includes/components/articleListItem.njk" %}
+                {% include "./_includes/components/articleListItem.njk" %}
             </article>
         </li>
     {% endfor %}
