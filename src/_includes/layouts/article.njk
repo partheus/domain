@@ -15,8 +15,8 @@
     <title>{{ title or metadata.title }}</title>
     {% include "../components/metadata.njk" %}
 
-    <link rel="preload" href="{{ '/assets/theme.css' | url }}" as="style">
-    <link rel="stylesheet" href="{{ '/assets/theme.css' | url }}">
+    <link rel="preload" href="{{ '/assets/theme.css' | url | safe }}" as="style">
+    <link rel="stylesheet" href="{{ '/assets/theme.css' | url | safe }}">
 </head>
 
 <body>

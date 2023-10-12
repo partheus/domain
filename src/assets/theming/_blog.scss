@@ -40,7 +40,36 @@
   list-style: lower-greek;
 
   li:nth-child(1) {
-  margin-top: 1em;
+    margin-top: 1em;
+  }
 }
+
+// Animations
+$numberOfItems: 10; // Change this to match your actual number of items
+$animationDelay: 0.5s; // Adjust the base delay as needed
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul.article__list {
+  li.article__item {
+    opacity: 0;
+    -webkit-animation: slideUp 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
+    animation: slideUp 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1s both;
+  }
+
+  @for $i from 1 through $numberOfItems {
+    li.article__item:nth-child(#{$i}) {
+      animation-delay: ($i) * $animationDelay;
+    }
+  }
 }
 
