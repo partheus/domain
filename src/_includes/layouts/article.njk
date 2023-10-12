@@ -1,4 +1,7 @@
-{% extends "layouts/base.njk" %}
+---
+layout: page
+title: "{{ title }}"
+---
 
 <article class="article">
     <h4>{{ description }}</h4>
@@ -174,3 +177,6 @@
     </div>
     {{ content | safe }}
 </article>
+
+<h4 class="mt-lg">Go back to <a href="/blog/">all entries</a>.  Or visit <a href="/writing">the writing section</a>.</h4>
+
