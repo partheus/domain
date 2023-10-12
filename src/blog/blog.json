@@ -1,6 +1,6 @@
 {
     "tags": "article",
-    "layout": "layouts/article.njk",
+    "layout": "layouts/test.njk",
     "permalink": "article/{{ page.date | getArticleYear }}/{{ page.fileSlug }}"
 }
 
