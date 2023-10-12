@@ -1,0 +1,44 @@
+---
+layout: page
+eleventyNavigation:
+  key: home
+  order: 1
+templateEngineOverride: njk, md
+tags:
+    - nav
+---
+
+# Welcome
+
+Temporal Harmony Garden
+
+Parth Shiralkar's personal website.
+
+
+<div class="card">
+  <h3 class="card-title">Card Title</h3>
+  <p class="card-description">
+    This is a dummy description for the card. You can add more details or content here.
+  </p>
+  <a href="#" class="card-link">Read More</a>
+</div>
+
+<div class="card">
+  <h3 class="card-title">Card Title</h3>
+  <p class="card-description">
+    This is a dummy description for the card. You can add more details or content here.
+  </p>
+  <a href="#" class="card-link">Read More</a>
+</div>
+
+<ul class="display-columns display-columns--two article__list">
+  {% for card in cardsData %}
+    <li class="article__item card">
+      <article class="article__preview">
+        <h3 class="card-title">{{ card.title }}</h3>
+        <p class="card-description">{{ card.description }}</p>
+      </article>
+    </li>
+  {% endfor %}
+</ul>
+
