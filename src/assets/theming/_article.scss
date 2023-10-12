@@ -10,7 +10,7 @@ article {
     line-height: 1;
     transition: all 0.2s ease-in-out;
 
-    font-family: var(--sans-font);
+    font-family: $accent-font;
     font-size: 0.8em;
 
     &:hover {
