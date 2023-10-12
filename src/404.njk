@@ -1,7 +1,8 @@
 ---
 layout: page
-title: "404: Whoops!"
+title: "404: Page not found"
 permalink: /404.html
+templateEngineOverride: njk, md
 ---
 <div class="error-container error-image svg-color witch-svg">
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -41,8 +42,11 @@ permalink: /404.html
     </svg>
 </div>
 <div class="error-container">
-    <h2>There was a misspelling error!</h2>
+    <h2>Whoops! There was a spelling error!</h2>
+
     <p class="error-message">Ah! The page or spell you're looking for doesn't exist. Perhaps go back <a href="/">home?</a></p>
+
+    <p>The requested URL: <span id="current-error-url"></span></p>
 </div>
 <style>
     .error-container {
@@ -59,3 +63,9 @@ permalink: /404.html
         margin-top: 20px;
     }
 </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("current-error-url").textContent = window.location.href;
+    });
+</script>
