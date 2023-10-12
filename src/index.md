@@ -3,7 +3,9 @@ layout: page
 eleventyNavigation:
   key: home
   order: 1
-tags: nav
+templateEngineOverride: njk, md
+tags:
+    - nav
 ---
 
 # Welcome
@@ -11,3 +13,5 @@ tags: nav
 Temporal Harmony Garden
 
 Parth Shiralkar's personal website.
+
+
