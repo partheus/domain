@@ -4,4 +4,4 @@ date: 2022-03-18
 description: Occasionally I'll get a hit but mostly it's a miss
 tags: ["humor", "life"]
 ---
-<img src="/img/newyorker795.png">
+<img src="/assets/img/newyorker795.png">

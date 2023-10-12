@@ -8,4 +8,4 @@ tags:
     - caption
     - contest
 ---
-<img src="/img/newyorkeridk.jpg">
+<img src="/assets/img/newyorkeridk.jpg">
