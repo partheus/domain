@@ -1,30 +1,7 @@
-<!doctype html>
-<html lang="{{ metadata.language }}" xmlns="http://www.w3.org/1999/html">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{{ '/assets/favicons/apple-touch-icon.png' | url }}" sizes="180x180">
-    <link href="{{ '/assets/favicons/favicon-32x32.png' | url }}" type="image/png" sizes="32x32">
-    <link href="{{ '/assets/favicons/favicon-16x16.png' | url }}" type="image/png" sizes="16x16">
-    <link href="{{ '/assets/favicons/site.webmanifest' | url }}" rel="manifest">
-    <link href="{{ '/assets/favicons/safari-pinned-tab.svg' | url }}" rel="mask-icon" color="#d21687">
-    <link href="{{ '/assets/favicons/favicon.ico' | url }}">
-    <meta name="msapplication-TileColor" content="#d21687">
-    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#fffcf6">
-    <title>{{ title or metadata.title }}</title>
-    {% include "../components/metadata.njk" %}
-
-    <link rel="preload" href="{{ '/assets/theme.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="stylesheet" href="{{ '/assets/theme.css' | url }}">
-  </head>
-
-  <body>
-    {% include "../components/header.njk" %}
-    <main role="main">
-      <h1>{{ title }}</h1>
-      {{ content | safe }}
-    </main>
-    {% include "../components/footer.njk" %}
-  </body>
-</html>
+---
+layout: base
+---
+{% if title %}
+<h1>{{ title }}</h1>
+{% endif %}
+{{ content | safe }}
