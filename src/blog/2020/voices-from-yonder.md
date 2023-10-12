@@ -5,7 +5,7 @@ description: 30-minute horror(?) speedrun
 tags:
     - fiction
     - horror
-    - short story
+    - short-story
 ---
 Ever since her little doll had gone missing, Emma Whelker had become increasingly and increasingly morose. Not being able to play with a toy for less than a day held a far deeper significance for twelve-year-old Emma than her parents could fathom.
 
