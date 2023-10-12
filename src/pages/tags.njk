@@ -8,9 +8,7 @@ permalink: /tags/{{ tag }}/
 eleventyComputed:
     title: "Tag: {{ tag }}"
 ---
-<div class="">
-    <h3 style="margin-bottom: 0.6em;" class="bold600">Here are all entries tagged “{{ tag }}”:</h3>
-</div>
+<h4>Here are all entries tagged “{{ tag }}”:</h4>
 {% set taglist = collections[tag] | getFilterTagList %}
 <ul class="article__list">
     {% for article in taglist | reverse %}
