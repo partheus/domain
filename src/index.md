@@ -10,5 +10,4 @@ tags: nav
 
 Temporal Harmony Garden
 
-This is a garden of temporal harmony.
 Parth Shiralkar's personal website.
