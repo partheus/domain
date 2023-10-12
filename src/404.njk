@@ -46,9 +46,13 @@ templateEngineOverride: njk, md
 
     <p class="error-message">Ah! The page or spell you're looking for doesn't exist. Perhaps go back <a href="/">home?</a></p>
 
-    <p>The requested URL: <span id="current-error-url"></span></p>
+    <p>The requested URL: <code><span id="current-error-url"></span></code></p>
 </div>
 <style>
+    #current-error-url {
+        overflow-wrap: anywhere;
+    }
+
     .error-container {
         text-align: left;
     }
