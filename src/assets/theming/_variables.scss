@@ -16,17 +16,17 @@ $sans-font: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial,
   --syntax-tab-size: 2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #170808;
-    --text-color: #fffcf6;
-    --text-color-link: #f345aa;
-    --text-color-link-active: #2cb6ff;
-    --text-color-link-visited: #a1377e;
-    --accent-color: #17D696;
-
-  }
-}
+//@media (prefers-color-scheme: dark) {
+//  :root {
+//    --background-color: #170808;
+//    --text-color: #fffcf6;
+//    --text-color-link: #f345aa;
+//    --text-color-link-active: #2cb6ff;
+//    --text-color-link-visited: #a1377e;
+//    --accent-color: #17D696;
+//
+//  }
+//}
 
 
 // dark mode
