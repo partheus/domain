@@ -7,8 +7,8 @@
 
 .logo a {
   svg {
-    max-height: 95px;
-    max-width: 95px;
+    max-height: 45px;
+    max-width: 55px;
 
     g {
       path {
@@ -17,8 +17,8 @@
     }
 
     @include breakpoint-md {
-      max-height: 150px;
-      max-width: 150px;
+      max-height: 95px;
+      max-width: 95px;
     }
   }
 }
