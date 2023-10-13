@@ -17,6 +17,11 @@ $spacing: (
     margin-bottom: $unit;
   }
 
+  .mx-#{$key} {
+    margin-left: $unit;
+    margin-right: $unit;
+  }
+
   .mt-#{$key} {
     margin-top: $unit;
   }
@@ -24,8 +29,32 @@ $spacing: (
   .mb-#{$key} {
     margin-bottom: $unit;
   }
+
+  .ml-#{$key} {
+    margin-left: $unit;
+  }
+
+  .mr-#{$key} {
+    margin-right: $unit;
+  }
+
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
 
 /* Reusable class for displaying items in columns */
 .display-columns {
