@@ -7,8 +7,6 @@ eleventyNavigation:
   key: writing
   order: 2
 ---
-<h4>{{ description | safe }}</h4>
-
 {% set taglist = collections.writing | getFilterTagList %}
 <ul class="article__list display-columns display-columns--two">
   {% for article in taglist | reverse %}

@@ -1,4 +1,4 @@
-<header role="banner">
+<header role="banner" class="ml-auto mr-auto">
     <div class="logo svg-color">
         <a href="{{ '/' | url }}" title="Home">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -52,5 +52,7 @@ c-57 66 -170 245 -224 356 -216 446 -237 966 -60 1432 55 144 183 380 197 364
         </a>
     </div>
 {#  include navbar  #}
-    {% include "../components/navbar.njk" %}
+    <div>
+        {% include "../components/navbar.njk" %}
+    </div>
 </header>
