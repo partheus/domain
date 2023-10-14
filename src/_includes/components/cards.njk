@@ -1,11 +1,11 @@
+{% from '../macros/testCard.njk' import testCard %}
+
 <div class="display-columns display-columns--two mt-lg">
-{% for card in testCards %}
-    <div class="card">
-        <h3 class="card__title">{{ card.title }}</h3>
-        <div class="card__description">
-            {{ card.description }}
-        </div>
-        <a href="{{ card.linkUrl }}" class="card__link">Read More</a>
-    </div>
-{% endfor %}
+    {% for card in testCards %}
+        {{ testCard(
+            title=card.title,
+            description=card.description,
+            linkUrl=card.linkUrl
+        ) }}
+    {% endfor %}
 </div>
