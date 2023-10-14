@@ -1,6 +1,7 @@
 {
   "tags": "page",
   "layout": "page",
-  "permalink": "{{ title }}.html"
+  "permalink": "{{ title }}.html",
+  "templateEngineOverride": "njk,md"
 }
 
