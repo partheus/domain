@@ -2,16 +2,16 @@
   {
     "title": "2022 Site",
     "imageUrl": "/assets/img/projects/2022site.webp",
-    "projectUrl": "#"
+    "projectUrl": "https://glittering-toffee-cd05cb.netlify.app/"
   },
   {
     "title": "2021 Site",
     "imageUrl": "/assets/img/projects/2021site.webp",
-    "projectUrl": "#"
+    "projectUrl": "https://parth-2021-site.netlify.app/"
   },
   {
     "title": "2020 Site",
     "imageUrl": "/assets/img/projects/2020site.webp",
-    "projectUrl": "#"
+    "projectUrl": "https://parth-2020.netlify.app/"
   }
 ]
