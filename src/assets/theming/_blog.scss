@@ -10,12 +10,6 @@
   }
 }
 
-.article__item {
-  + .article__item {
-    margin-top: 1em;
-  }
-}
-
 .article__preview {
   max-width: 70ch;
 
@@ -44,12 +38,9 @@
 .article__list {
   list-style: lower-greek;
 
-  li:nth-child(1) {
-    margin-top: 1em;
-  }
 
   @include breakpoint-sm-plus {
-    max-width: 81ch;
+    max-width: 90ch;
   }
 }
 
