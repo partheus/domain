@@ -28,12 +28,12 @@ article {
 
   p {
     + * {
-      margin-top: 1em;
+      margin-top: 1.25em;
     }
 
     //  make the first letter of each paragraph capital
     &:first-of-type:first-letter {
-      font-size: 1.75em;
+      font-size: 2.5em;
     }
   }
 
@@ -55,11 +55,18 @@ article {
       max-height: 40vh;
     }
   }
+}
 
+.article__title {
+  line-height: 1.2em;
+}
+
+.article__title:first-letter {
+  text-decoration: underline;
 }
 
 .article-separator {
   margin-bottom: 2rem;
   opacity: 50%;
-  max-width: 60ch;
+  max-width: 70ch;
 }
