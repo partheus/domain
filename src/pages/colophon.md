@@ -27,7 +27,7 @@ Primary font face is [Besley](https://indestructibletype.com/Besley.html) and se
 
 This website was engineered on a MacBook Pro laptop (pink motif). It is written in HTML, Markdown, Nunjucks, CSS, and Javascript.
 
-[Eleventy](https://www.11ty.dev/) is used for static page generation. [Git](https://git-scm.com/) is used for version control. [Github](https://github.com) is used to store the repository. This site is hosted on ~~[Netlify](/entries/2022/github-pages/)~~ [GitHub Pages](https://pages.github.com/).
+[Eleventy](https://www.11ty.dev/) is used for static page generation. [Git](https://git-scm.com/) is used for version control. [Github](https://github.com) is used to store the repository. It is being tested and hosted on CloudFlare and Netlify.
 
 
 I used [PHPStorm](https://www.jetbrains.com/phpstorm/) for development; [Chromium Nightly](https://www.chromium.org/Home/) and [Firefox](https://www.mozilla.org/en-US/firefox/new/) were used for testing.
@@ -35,9 +35,9 @@ I used [PHPStorm](https://www.jetbrains.com/phpstorm/) for development; [Chromiu
  
 <hr class="mt-lg mb-md" />
 
-# Some resources I found helpful:
+- ## Some resources I found helpful:
 
-- 11ty Main Docs: [11tyJS](https://www.11ty.dev/docs/)
+11ty Main Docs: [11tyJS](https://www.11ty.dev/docs/)
 
 <div class="mt-lg mb-md">
 
