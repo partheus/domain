@@ -1,52 +1,17 @@
 [
   {
-    "title": "Lorem Ipsum Dolor",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "linkUrl": "#"
-  },
-  {
-    "title": "Sit Amet Consectetur",
-    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    "linkUrl": "#"
-  },
-  {
-    "title": "Adipiscing Elit",
-    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    "title": "Consectetur Adipiscing",
+    "description": "Life can be a dream when you dig what you're doing, here is the second sentence. And the third for good measure.",
     "linkUrl": "#"
   },
   {
     "title": "Morbi Tristique Senectus",
-    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-    "linkUrl": "#"
-  },
-  {
-    "title": "Netus et Malesuada",
-    "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper vel purus quis mattis. Maecenas tempor metus tellus. Phasellus lacinia tellus gravida, lacinia augue ut, rutrum dolor. Quisque vestibulum pulvinar dolor sed vulputate. Phasellus eget ornare massa. ",
     "linkUrl": "#"
   },
   {
     "title": "Fames ac Turpis Egestas",
-    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    "linkUrl": "#"
-  },
-  {
-    "title": "Vestibulum Ante Ipsum",
-    "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
-    "linkUrl": "#"
-  },
-  {
-    "title": "Primis in Faucibus",
-    "description": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio.",
-    "linkUrl": "#"
-  },
-  {
-    "title": "Orci Luctus et Ultrices",
-    "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.",
-    "linkUrl": "#"
-  },
-  {
-    "title": "Posuere Cubilia Curae",
-    "description": "Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+    "description": "Nulla facilisi. Donec euismod, nisl quis aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eu nisl. Nulla facilisi. Donec euismod, nisl quis aliquam ultricies, nunc nisl aliquet nunc, eget aliquam nisl nisl eu nisl.",
     "linkUrl": "#"
   }
 ]
