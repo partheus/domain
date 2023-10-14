@@ -1,24 +1,26 @@
 .card {
   padding: 1em;
-  background-color: var(--background-color);
+  background: hsl(324.19deg 79.49% 45.88% / 5%);
   color: var(--text-color);
   box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  transition: transform 0.5s, box-shadow 0.5s, filter 0.5s;
+  transition: all 0.5s ease-in-out;
   transform: translateY(0);
   position: relative;
   overflow: hidden;
-  min-height: 340px;
+  min-height: 250px;
   min-width: 30vw;
 
 
   &:hover {
     transform: translate3d(0, -0.25em, 0);
-    box-shadow: 0 -4px 9px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 0px 16px 5px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    background: hsl(324.19deg 79.49% 45.88% / 20%);
   }
 
   @include breakpoint-md {
+    min-height: 350px;
     max-width: 30vw;
   }
 
@@ -27,7 +29,12 @@
   }
 
   &:hover .card__title, &:hover .card__description, &:hover .card-link {
-    transform: translateY(-0.25em); /* Adjust the value for the desired slide-up distance */
+    transform: translateY(-0.15em); /* Adjust the value for the desired slide-up distance */
+  }
+
+  &:hover .card__title {
+    border-bottom: 2px solid var(--accent-color);
+    max-width: fit-content;
   }
 
   &__link {
@@ -43,6 +50,10 @@
   &__description {
     margin-top: 0.5em;
   }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .card-image {
@@ -52,6 +63,7 @@
   border-radius: 0.45em;
   box-shadow: none;
   transition: all 0.3s ease-in-out; /* Smooth transition */
+  filter: sepia(1) saturate(0.2);
 
   @include breakpoint-md {
     max-width: 30vw;
@@ -62,5 +74,6 @@
 .card:hover .card-image {
   transform: translateY(0.5em); /* Move the image down on hover */
   box-shadow: 0 -4px 9px 2px rgba(0, 0, 0, 0.1);
+  filter: sepia(0) saturate(1.2);
   transition: all 0.5s ease-in-out;
 }

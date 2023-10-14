@@ -64,7 +64,7 @@ $spacing: (
   grid-template-columns: 1fr; /* 1 column for smaller screens */
 
   &--two {
-    @include breakpoint-md {
+    @include breakpoint-md-plus {
       grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
     }
   }
