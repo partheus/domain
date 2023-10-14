@@ -210,6 +210,10 @@ blockquote {
         font-size: 1.3em;
       }
     }
+
+    @include breakpoint-sm {
+      margin-bottom: 3em;
+    }
   }
 
   &__content {
