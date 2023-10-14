@@ -1,4 +1,18 @@
 <footer role="contentinfo" class="ml-auto mr-auto">
+    <div class="footer__links">
+        {% set footerItems = collections.footer | eleventyNavigation %}
+            {#    <div class="dark-mode-toggle">#}
+            {#        <label for="dark-mode-switch">Dark Mode</label>#}
+            {#        <input type="checkbox" id="dark-mode-switch">#}
+            {#    </div>#}
+            <ul>
+                {%- for item in footerItems %}
+                    <li class="nav__item{{ ' active' if page.url === item.url }}">
+                        <a href="{{ item.url }}">{{ item.key }}</a>
+                    </li>
+                {%- endfor -%}
+            </ul>
+    </div>
 {# Insert newspaper.svg with newspaper-svg class here #}
   <div class="newspaper-svg svg-color">
       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
