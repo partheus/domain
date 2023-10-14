@@ -19,6 +19,23 @@ $animationDelay: 0.18s; // Adjust the base delay as needed
   animation: slideUp 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.1s both;
 }
 
+@keyframes slideUpHalf {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up-half {
+  opacity: 0;
+  -webkit-animation: slideUpHalf 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.1s both;
+  animation: slideUpHalf 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.1s both;
+}
+
 ul.article__list {
   li.article__item {
     opacity: 0;
