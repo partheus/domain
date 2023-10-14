@@ -1,16 +1,16 @@
 .card {
   padding: 1em;
-  background-color: var(--accent-color);
-  color: var(--text-color-link-visited);
+  border: 1px var(--text-color-link-visited) solid;
+  background-color: var(--background-color);
+  color: var(--text-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin-bottom: 1em;
   transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
 
   &:hover {
-    transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -1rem, 0);
     box-shadow: var(--shadow-lg);
-    filter: hue-rotate(45deg);
+    filter: hue-rotate(90deg);
   }
 
   @include breakpoint-md {
@@ -21,34 +21,20 @@
 .card__title {
   border: var(--text-color-link-active) 2px solid;
   padding: 0.2em;
-  margin-top: 10px;
   color: var(--text-color);
 }
 
-.card:hover .card__title {
-  transform: translate3d(0,0.5rem,0);
-  transition: all .8s var(--transition-bounce);
-}
-
 .card {
-  /* ... your existing card styles ... */
-  margin-top: 2em;
-
   /* Specify the initial position for the slide-up effect */
   transform: translateY(0);
-  transition: transform 0.3s; /* Add a smooth transition */
+  transition: transform 0.4s; /* Add a smooth transition */
 
   &:hover {
     transform: translateY(-0.5rem); /* Adjust the value for the desired slide-up distance */
   }
 
   h3, p, .card-link {
-    color: var(--background-color);
-    transition: transform 0.3s; /* Apply the same transition duration to all elements */
-  }
-
-  a {
-    color: var(--background-color);
+    transition: transform 0.4s; /* Apply the same transition duration to all elements */
   }
 
   &:hover h3, &:hover p, &:hover .card-link {

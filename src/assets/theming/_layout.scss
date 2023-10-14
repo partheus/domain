@@ -60,6 +60,7 @@ $spacing: (
 .display-columns {
   display: grid;
   column-gap: 2em;
+  row-gap: 1.5em;
   grid-template-columns: 1fr; /* 1 column for smaller screens */
 
   &--two {

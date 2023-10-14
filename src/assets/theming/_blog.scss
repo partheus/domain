@@ -2,6 +2,10 @@
 
 .article {
   @include breakpoint-md {
+    max-width: 70vw;
+  }
+
+  @include breakpoint-lg {
     max-width: 50vw;
   }
 }
