@@ -5,12 +5,12 @@
   color: var(--text-color);
   box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  transition: transform 0.4s, box-shadow 0.4s, filter 0.4s;
+  transition: transform 0.5s, box-shadow 0.5s, filter 0.5s;
   transform: translateY(0);
 
   &:hover {
-    transform: translate3d(0, -0.5rem, 0);
-    box-shadow:  0 8px 10px 1px rgba(0, 0, 0, 0.1);
+    transform: translate3d(0, -0.5em, 0);
+    box-shadow:  0 -4px 9px 2px rgba(0, 0, 0, 0.1);
     filter: saturate(12) hue-rotate(270deg);
     cursor: pointer;
   }
@@ -19,18 +19,18 @@
     max-width: 30vw;
   }
 
-  h3, p, .card-link {
-    transition: transform 0.4s; /* Apply the same transition duration to all elements */
+  .card__title, .card__description, .card-link {
+    transition: transform 0.5s; /* Apply the same transition duration to all elements */
   }
 
-  &:hover h3, &:hover p, &:hover .card-link {
-    transform: translateY(-0.5rem); /* Adjust the value for the desired slide-up distance */
+  &:hover .card__title, &:hover .card__description, &:hover .card-link {
+    transform: translateY(-0.5em); /* Adjust the value for the desired slide-up distance */
   }
 
   &__link {
     color: var(--text-color-link);
     font-weight: bold;
-    transition: color 0.4s;
+    transition: color 0.5s;
 
     &:hover {
       color: var(--text-color-link-hover);
