@@ -1,49 +1,11 @@
-<div class="display-columns display-columns--two">
-<div class="card">
-    <h3 class="card__title">Card Title</h3>
-    <p class="card__description">
-        This is a dummy description for the card. You can add more details or content here.
-    </p>
-    <a href="#" class="card__link">Read More</a>
-</div>
-
-<div class="card">
-    <h3 class="card__title">Card Title</h3>
-    <p class="card__description">
-        This is a dummy description for the card. You can add more details or content here.
-    </p>
-    <a href="#" class="card__link">Read More</a>
-</div>
-
-<div class="card">
-    <h3 class="card__title">Card Title</h3>
-    <p class="card__description">
-        This is a dummy description for the card. You can add more details or content here.
-    </p>
-    <a href="#" class="card__link">Read More</a>
-</div>
-
-<div class="card">
-    <h3 class="card__title">Card Title</h3>
-    <p class="card__description">
-        This is a dummy description for the card. You can add more details or content here.
-    </p>
-    <a href="#" class="card__link">Read More</a>
-</div>
-
-<div class="card">
-    <h3 class="card__title">Card Title</h3>
-    <p class="card__description">
-        This is a dummy description for the card. You can add more details or content here.
-    </p>
-    <a href="#" class="card__link">Read More</a>
-</div>
-
-<div class="card">
-    <h3 class="card__title">Card Title</h3>
-    <p class="card__description">
-        This is a dummy description for the card. You can add more details or content here.
-    </p>
-    <a href="#" class="card__link">Read More</a>
-</div>
+<div class="display-columns display-columns--two mt-lg">
+{% for card in testCards %}
+    <div class="card">
+        <h3 class="card__title">{{ card.title }}</h3>
+        <div class="card__description">
+            {{ card.description }}
+        </div>
+        <a href="{{ card.linkUrl }}" class="card__link">Read More</a>
+    </div>
+{% endfor %}
 </div>
