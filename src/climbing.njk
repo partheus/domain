@@ -2,7 +2,9 @@
 layout: page
 title: "Climbing"
 description: "Up down up down up down"
-tags: nav
+tags: [footer]
+eleventyNavigation:
+  key: climbing
 ---
 {% set taglist = collections.climbing | getFilterTagList %}
 <ul class="article__list display-columns display-columns--two">
