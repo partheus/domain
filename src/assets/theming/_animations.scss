@@ -22,7 +22,7 @@ $animationDelay: 0.18s; // Adjust the base delay as needed
 @keyframes slideUpHalf {
   0% {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(25%);
   }
   100% {
     opacity: 1;
@@ -32,14 +32,14 @@ $animationDelay: 0.18s; // Adjust the base delay as needed
 
 .slide-up-half {
   opacity: 0;
-  -webkit-animation: slideUpHalf 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.1s both;
-  animation: slideUpHalf 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.1s both;
+  -webkit-animation: slideUpHalf 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
+  animation: slideUpHalf 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s both;
 }
 
 .slide-up-half-slow {
   opacity: 0;
-  -webkit-animation: slideUpHalf 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.7s both;
-  animation: slideUpHalf 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.7s both;
+  -webkit-animation: slideUpHalf 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.7s both;
+  animation: slideUpHalf 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.7s both;
 }
 
 ul.article__list {
@@ -124,6 +124,6 @@ ul.article__list {
 }
 
 .scale-in-rotate-center {
-    -webkit-animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
-    animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+    -webkit-animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
+    animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
 }

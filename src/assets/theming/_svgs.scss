@@ -84,8 +84,8 @@
 .flower-svg-top-right {
   rotate: 112deg;
   position: absolute;
-  width: 80px; /* adjust as needed */
-  height: 80px; /* adjust as needed */
+  width: 90px; /* adjust as needed */
+  height: 90px; /* adjust as needed */
 }
 
 .flower-svg-bottom-left {
@@ -97,6 +97,7 @@
 
 .flower-svg-bottom-left, .flower-svg-top-right {
   z-index: -2;
+  filter: opacity(0.8);
 }
 
 .flower-svg-top-right {
