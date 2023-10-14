@@ -89,11 +89,11 @@ ul.article__list {
 }
 
 .scale-in-center {
-  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  -webkit-animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 
-@-webkit-keyframes scale-in-center {
+@-webkit-keyframes scaleInCenter {
   0% {
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -105,7 +105,7 @@ ul.article__list {
     opacity: 1;
   }
 }
-@keyframes scale-in-center {
+@keyframes scaleInCenter {
   0% {
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -116,4 +116,14 @@ ul.article__list {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+@keyframes slight-rotation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(15deg); }
+}
+
+.scale-in-rotate-center {
+    -webkit-animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+    animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 }

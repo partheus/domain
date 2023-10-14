@@ -143,7 +143,7 @@ nav ul li {
   &.active a {
     font-weight: 600;
     text-decoration: underline;
-    color: var(--text-color-link-active);
+    color: var(--accent-color);
   }
 
   a {
@@ -179,6 +179,7 @@ blockquote {
   &__header {
     text-align: center;
     margin-bottom: 2em;
+    margin-top: 1em;
 
     h1 {
       font-size: 2em;

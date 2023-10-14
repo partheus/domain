@@ -67,3 +67,60 @@
     }
   }
 }
+
+.flower-svg-container {
+  position: relative;
+
+  svg {
+    g {
+      path {
+        fill: var(--text-color-link) !important;
+        stroke: var(--text-color-link) !important;
+      }
+    }
+  }
+}
+
+.flower-svg-top-right {
+  rotate: 112deg;
+  position: absolute;
+  width: 80px; /* adjust as needed */
+  height: 80px; /* adjust as needed */
+}
+
+.flower-svg-bottom-left {
+  rotate: 5deg;
+  position: absolute;
+  width: 40px; /* adjust as needed */
+  height: 50px; /* adjust as needed */
+}
+
+.flower-svg-bottom-left, .flower-svg-top-right {
+  z-index: -2;
+}
+
+.flower-svg-top-right {
+  top: -2em;
+  right: 4em;
+
+  @include breakpoint-sm {
+    right: 8em;
+  }
+
+  @include breakpoint-lg {
+    right: 15em;
+  }
+}
+
+.flower-svg-bottom-left {
+  bottom: -1em;
+  left: 4em;
+
+  @include breakpoint-sm {
+    left: 8em;
+  }
+
+  @include breakpoint-lg {
+    left: 15em;
+  }
+}
