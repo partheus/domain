@@ -1,0 +1,6 @@
+{% macro projectCard(title, description, imageUrl) %}
+<div class="card">
+    <h3 class="mt-sm card__title mb-md">{{ title }}</h3>
+    <img class="card-image mb-md" src="{{ imageUrl | url }}">
+</div>
+{% endmacro %}

@@ -215,12 +215,8 @@ blockquote {
   &__content {
     margin: 0 auto;
 
-    @include breakpoint-sm-plus {
-      max-width: 80vw;
-    }
-
     @include breakpoint-lg {
-      max-width: 60vw;
+      max-width: 80vw;
     }
   }
 }
