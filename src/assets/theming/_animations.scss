@@ -67,13 +67,21 @@ ul.article__list {
 // Fade in animation
 
 @-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .slow-fade-in {
@@ -82,11 +90,6 @@ ul.article__list {
 }
 
 // Text focus in animation
-
-.text-focus-in {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
 
 @-webkit-keyframes text-focus-in {
   0% {
@@ -100,6 +103,7 @@ ul.article__list {
     opacity: 1;
   }
 }
+
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -111,6 +115,11 @@ ul.article__list {
     filter: blur(0px);
     opacity: 1;
   }
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 0.75s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 0.75s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 // Scale in center animation
@@ -132,6 +141,7 @@ ul.article__list {
     opacity: 1;
   }
 }
+
 @keyframes scaleInCenter {
   0% {
     -webkit-transform: scale(0);
@@ -148,11 +158,15 @@ ul.article__list {
 // Slight rotation animation
 
 @keyframes slight-rotation {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(15deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
 }
 
 .scale-in-rotate-center {
-    -webkit-animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
-    animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
+  -webkit-animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
+  animation: scaleInCenter 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
 }
