@@ -1,12 +1,17 @@
 [
   {
-    "title": "2020 Site",
-    "imageUrl": "/assets/img/projects/2020site.png",
-    "linkUrl": "#"
+    "title": "2022 Site",
+    "imageUrl": "/assets/img/projects/2022site.webp",
+    "projectUrl": "#"
   },
   {
     "title": "2021 Site",
-    "imageUrl": "/assets/img/projects/2020site.png",
-    "linkUrl": "#"
+    "imageUrl": "/assets/img/projects/2021site.webp",
+    "projectUrl": "#"
+  },
+  {
+    "title": "2020 Site",
+    "imageUrl": "/assets/img/projects/2020site.webp",
+    "projectUrl": "#"
   }
 ]
