@@ -3,7 +3,7 @@
         <ul>
             {%- for item in navItems %}
                 <li class="nav__item{{ ' active' if page.url === item.url }}">
-                    <a href="{{ item.url }}">{{ item.key }}</a>
+                    <a href="{{ item.url }}" title="{{ item.key }}">{{ item.key }}</a>
                 </li>
             {%- endfor -%}
         </ul>
