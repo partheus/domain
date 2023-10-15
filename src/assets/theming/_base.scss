@@ -73,6 +73,29 @@ nav {
   }
 }
 
+.nav__container {
+  display: block;
+  position: fixed;
+  padding: 0.65em 1.5em;
+  border-radius: 10em;
+  z-index: 20;
+  background: hsl(313.8deg 54.92% 85.59% / 32%);
+  backdrop-filter: blur(20px) saturate(1.7);
+  -webkit-backdrop-filter: blur(20px) saturate(1.7);
+}
+
+.nav__floating-buttons {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+
+  @include breakpoint-md {
+    top: 2em;
+    right: 5em;
+    bottom: auto;
+  }
+}
+
 main {
   flex: 0 1 100%;
 
@@ -134,6 +157,7 @@ footer span {
 
 nav ul li, footer ul li {
   display: inline-block;
+  font-weight: normal;
 
   + li {
     margin-left: 1.2rem;
@@ -148,8 +172,20 @@ nav ul li, footer ul li {
   a {
     display: inline-block;
     text-decoration: none;
-    padding-bottom: 5px;
-    transition: color 400ms;
+    padding: 0.2em 0.4em;
+    border: 2px dashed transparent;
+    border-radius: 1em;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: var(--accent-color);
+    border: 2px dashed var(--text-color-link);
+    transition: all 0.3s ease-in-out;
+  }
+
+  @include breakpoint-md {
+    font-size: 1.1em;
   }
 }
 
@@ -159,7 +195,7 @@ nav ul li, footer ul li {
 }
 
 .tester {
-  transform: translate3d(0,-3px,0);
+  transform: translate3d(0, -3px, 0);
   box-shadow: var(--shadow-lg);
   filter: saturate(1.2);
 }

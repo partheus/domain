@@ -1,5 +1,6 @@
-<header role="banner" class="ml-auto mr-auto">
-    <div class="logo svg-color">
+<header role="banner" class="ml-auto mr-auto mb-xxl">
+    <div class="nav__floating-buttons">
+    <div class="logo svg-color home-logo">
         <a href="{{ '/' | url }}" title="Home">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                  width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
@@ -51,8 +52,15 @@ c-57 66 -170 245 -224 356 -216 446 -237 966 -60 1432 55 144 183 380 197 364
             </svg>
         </a>
     </div>
+{#        <div class="theme-toggle">#}
+{#            <label class="switch">#}
+{#                <input type="checkbox" id="night-mode-toggle">#}
+{#                <span class="slider round"></span>#}
+{#            </label>#}
+{#        </div>#}
+    </div>
 {#  include navbar  #}
-    <div>
+    <div class="nav__container">
         {% include "../components/navbar.njk" %}
     </div>
 </header>

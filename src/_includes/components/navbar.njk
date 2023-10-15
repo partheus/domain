@@ -1,14 +1,15 @@
 {% set navItems = collections.nav | eleventyNavigation %}
 <nav role="navigation" aria-label="main navigation">
+        <ul>
+            {%- for item in navItems %}
+                <li class="nav__item{{ ' active' if page.url === item.url }}">
+                    <a href="{{ item.url }}">{{ item.key }}</a>
+                </li>
+            {%- endfor -%}
+        </ul>
 {#    <div class="dark-mode-toggle">#}
 {#        <label for="dark-mode-switch">Dark Mode</label>#}
 {#        <input type="checkbox" id="dark-mode-switch">#}
 {#    </div>#}
-    <ul>
-        {%- for item in navItems %}
-            <li class="nav__item{{ ' active' if page.url === item.url }}">
-                <a href="{{ item.url }}">{{ item.key }}</a>
-            </li>
-        {%- endfor -%}
-    </ul>
+
 </nav>

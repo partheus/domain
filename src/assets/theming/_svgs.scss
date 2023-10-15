@@ -68,6 +68,16 @@
   }
 }
 
+.home-logo {
+  display: block;
+  padding: 0.5em 0.5em 0.3em;
+  border-radius: 10em;
+  z-index: 20;
+  background: hsl(313.8deg 54.92% 85.59% / 32%);
+  backdrop-filter: blur(20px) saturate(1.7);
+  -webkit-backdrop-filter: blur(20px) saturate(1.7);
+}
+
 .flower-svg-container {
   position: relative;
 
