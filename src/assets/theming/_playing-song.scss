@@ -37,9 +37,12 @@
 
 .listening-module:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
   filter: saturate(1.2);
   transition: all 0.2s ease-in-out;
+
+  .song-title a {
+    cursor: pointer;
+  }
 
   .song-title::after {
     opacity: 1;
