@@ -1,10 +1,8 @@
 .card {
   padding: 1em;
-  background: hsl(324.19deg 79.49% 45.88% / 5%);
-  color: var(--text-color);
+  background: var(--background-color-light);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in-out;
   transform: translateY(0);
   position: relative;
@@ -15,7 +13,7 @@
   &:hover {
     transform: translate3d(0, -0.25em, 0);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: hsl(324.19deg 79.49% 45.88% / 10%);
+    filter: invert(1);
   }
 
   @include breakpoint-md {
@@ -43,8 +41,12 @@
     transition: opacity 0.3s ease;
   }
 
+  .card__title {
+    color: var(--text-color);
+  }
+
   &__link {
-    color: var(--text-color-link);
+    color: var(--background-color);
     font-weight: bold;
 
     &:hover {
@@ -58,6 +60,7 @@
 
   &__title {
     border-bottom: 3px solid transparent;
+    color: var(--background-color);
   }
 
   &__title::after {
