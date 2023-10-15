@@ -60,11 +60,11 @@ $spacing: (
 .display-columns {
   display: grid;
   column-gap: 2em;
-  row-gap: 1.5em;
+  row-gap: 2em;
   grid-template-columns: 1fr; /* 1 column for smaller screens */
 
   &--two {
-    @include breakpoint-md-plus {
+    @include breakpoint-md {
       grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
     }
   }
