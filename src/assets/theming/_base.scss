@@ -91,7 +91,7 @@ nav {
   position: relative;
   justify-content: space-between;
   row-gap: 0.25em;
-  column-gap: 1em;
+  column-gap: 0.25em;
 
   @include breakpoint-sm {
     flex-direction: row;
@@ -277,6 +277,8 @@ blockquote {
       max-width: 65vw;
     }
   }
+
+
 }
 
 .theme-toggle-container {
