@@ -1,4 +1,5 @@
 article {
+
   .category {
     display: inline-block;
     font-weight: 600;
@@ -70,4 +71,10 @@ article {
   margin-bottom: 2rem;
   opacity: 50%;
   max-width: 70ch;
+}
+
+.article__body {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0;
+  }
 }
