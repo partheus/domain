@@ -48,10 +48,6 @@
   &__link {
     color: var(--background-color);
     font-weight: bold;
-
-    &:hover {
-      color: var(--text-color-link-hover);
-    }
   }
 
   &__description {

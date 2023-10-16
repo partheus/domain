@@ -73,7 +73,11 @@ $spacing: (
   }
 
   &--three {
-    @include breakpoint-sm-plus {
+    @include breakpoint-sm {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+
+    @include breakpoint-md {
       grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
     }
   }

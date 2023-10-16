@@ -79,6 +79,7 @@ nav {
     z-index: 20;
     background: hsl(313.8deg 54.92% 85.59% / 32%);
     backdrop-filter: blur(20px) saturate(1.7);
+    font-size: 90%;
     -webkit-backdrop-filter: blur(20px) saturate(1.7);
 
     @include breakpoint-sm {
@@ -93,7 +94,7 @@ nav {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  row-gap: 1em;
+  row-gap: 0.25em;
   column-gap: 1em;
 
   @include breakpoint-sm {

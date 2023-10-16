@@ -1,6 +1,8 @@
 @import "base";
 
-.article {
+.article, .article__title {
+  margin: 0 auto;
+
   @include breakpoint-md {
     max-width: 70vw;
   }
