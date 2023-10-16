@@ -138,7 +138,8 @@ header {
 }
 
 footer {
-  padding: 3.5em 0 6.5em 0;
+  padding: 1em 0 5em 0;
+  border-top: 1px solid var(--background-color-light);
 }
 
 header {
@@ -184,6 +185,7 @@ nav ul li, footer ul li {
     text-decoration: none;
     padding: 0.2em 0.4em;
     transition: all 0.3s ease-in-out;
+    font-size: 90%;
   }
 
   a:hover {
@@ -271,14 +273,14 @@ blockquote {
   }
 }
 
-.toggle-container {
+.theme-toggle-container {
   position: fixed;
   right: 0;
   bottom: 0;
   cursor: pointer;
   z-index: 100;
-  padding: 0.25em;
-  font-size: 1.2em;
+  padding: 0.15em;
+  font-size: 1.8em;
   background-color: rgba(0, 0, 0, 0.051); /* Slightly dark background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small box shadow */
   display: flex;
