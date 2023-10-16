@@ -4,8 +4,6 @@
 }
 
 html {
-  background-color: var(--background-color);
-  color: var(--text-color);
   font-family: $main-font;
   font-size: 54%;
   scroll-behavior: smooth;
@@ -27,6 +25,8 @@ html {
 }
 
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,7 @@ body {
   line-height: 127.5%;
   min-width: 300px;
   margin: 0 1em;
+  transition: all 0.3s ease-in-out;
 
   @include breakpoint-sm {
     font-size: 2.3rem;
@@ -75,7 +76,6 @@ nav {
   ul {
     list-style: none;
     z-index: 20;
-    font-size: 90%;
     display: flex;
 
     @include breakpoint-sm {
@@ -268,6 +268,24 @@ blockquote {
     @include breakpoint-lg {
       max-width: 80vw;
     }
+  }
+}
+
+.toggle-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 100;
+  padding: 0.25em;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.051); /* Slightly dark background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small box shadow */
+  display: flex;
+
+  @include breakpoint-sm {
+    top: 0;
+    bottom: auto;
   }
 }
 

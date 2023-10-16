@@ -13,28 +13,22 @@ $sans-font: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial,
   --syntax-tab-size: 2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #0e0c0c;
-    --background-color-light: #003d2f;
-    --text-color: #ffe45b;
-    --text-color-link: #21dab6;
-    --accent-color: #f169b7;
-  }
+.high-contrast {
+  --background-color: #0e0c0c;
+  --background-color-light: #003d2f;
+  --text-color: #ffe45b;
+  --text-color-link: #21dab6;
+  --accent-color: #f169b7;
+
 }
 
+//@media (prefers-color-scheme: dark) {
+//  :root {
+//    --background-color: #0e0c0c;
+//    --background-color-light: #003d2f;
+//    --text-color: #ffe45b;
+//    --text-color-link: #21dab6;
+//    --accent-color: #f169b7;
+//  }
+//}
 
-// dark mode
-/* Initially hide the checkbox */
-.dark-mode-toggle input {
-  display: none;
-}
-
-/* Style the label as a button */
-.dark-mode-toggle label {
-  cursor: pointer;
-  background-color: #eee;
-  border: 2px solid #333;
-  padding: 5px 10px;
-  border-radius: 20px;
-}
