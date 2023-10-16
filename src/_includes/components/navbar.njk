@@ -13,6 +13,12 @@
     </div>
 </nav>
 <script>
+    // Check for no js
+    function jscheck() {
+        document.getElementsByTagName("BODY")[0].classList.remove("no-js");
+    }
+
+    // Theme toggle
     const toggle = document.getElementById("high-contrast-toggle");
     const body = document.body;
 

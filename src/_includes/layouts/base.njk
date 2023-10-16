@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{{ '/assets/theme.css' | url }}">
 </head>
 
-<body>
+<body class="no-js" onload="jscheck()">
 {% include "../components/header.njk" %}
 <main role="main">
     {{ content | safe }}
