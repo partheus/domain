@@ -302,5 +302,7 @@ blockquote {
   width: 30px;
 }
 
-
+.no-click {
+  pointer-events: none;
+}
 
