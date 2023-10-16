@@ -285,17 +285,16 @@ blockquote {
   position: fixed;
   right: 0;
   bottom: 0;
-  cursor: pointer;
   z-index: 100;
-  padding: 0.15em;
-  font-size: 1.8em;
-  background-color: rgba(0, 0, 0, 0.051); /* Slightly dark background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small box shadow */
+  padding: 0.25em;
+  font-size: 2.75em;
   display: flex;
+  line-height: 69%;
 
   @include breakpoint-sm {
     top: 0;
     bottom: auto;
+    font-size: 2em;
   }
 }
 

@@ -17,8 +17,13 @@
   }
 
   @include breakpoint-md {
-    min-height: 30vh;
+    min-height: 25vh;
     max-width: 30vw;
+    max-height: 250px;
+  }
+
+  @include breakpoint-lg {
+    min-height: 35vh;
   }
 
   @include breakpoint-st-xs {
@@ -93,7 +98,7 @@
 }
 
 .card:hover .card-image {
-  transform: translateY(0.5em); /* Move the image down on hover */
+  transform: translateY(0.5em) translateX(0.25em); /* Move the image down on hover */
   filter: saturate(1.8);
   transition: all 0.4s ease-in-out;
 }
