@@ -19,6 +19,8 @@ description: col⋅o⋅phon (noun) An inscription, usually at the end of a book,
 
 Original wireframes / prototypes were developed using [Lunacy](https://icons8.com/lunacy). Site icon is my own design; browser-compatible favicons were generated using [this site](https://realfavicongenerator.net/).
 
+Clipart and SVGs are from [OpenClipart](https://openclipart.org/).
+
 Mockups generated using [https://screenshot.rocks/](https://screenshot.rocks/).
 
 Primary font face is [Besley](https://indestructibletype.com/Besley.html) and secondary font face is [EB Garamond](https://github.com/octaviopardo/EBGaramond12/tree/master).
