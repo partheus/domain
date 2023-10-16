@@ -8,7 +8,7 @@
             {%- endfor -%}
         </ul>
 
-    <div class="theme-toggle-container" title="High contrast theme">
+    <div class="theme-toggle-container" title="Change theme">
             <span id="high-contrast-toggle">&#x2688;</span> <!-- Unicode icon -->
     </div>
 </nav>
@@ -22,33 +22,44 @@
     const toggle = document.getElementById("high-contrast-toggle");
     const body = document.body;
 
-    // Check if the user has previously selected the high-contrast mode
-    let isHighContrastMode = localStorage.getItem("highContrastMode") === "true";
+    const themes = ["default", "low-noir", "high-contrast"];
+    let currentThemeIndex = 0; // Start with the default theme
 
-    // Function to toggle high-contrast mode
-    function toggleHighContrastMode() {
-        isHighContrastMode = !isHighContrastMode;
-        updateHighContrastMode();
+    const themeSymbols = ["&#x2688;", "&#x2689;", "&#x2686;"];
+
+    // Function to toggle between themes
+    function toggleTheme() {
+        currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+        updateTheme();
     }
 
-    // Function to update high-contrast mode
-    function updateHighContrastMode() {
-        if (isHighContrastMode) {
-            body.classList.add("high-contrast");
-            localStorage.setItem("highContrastMode", "true");
-        } else {
-            body.classList.remove("high-contrast");
-            localStorage.setItem("highContrastMode", "false");
-        }
-        toggle.innerHTML = body.classList.contains("high-contrast") ? "&#x2686;" : "&#x2688;";
+    // Function to update the current theme
+    function updateTheme() {
+        // Remove all theme classes
+        body.classList.remove(...themes);
 
+        // Add the current theme class
+        body.classList.add(themes[currentThemeIndex]);
+
+        // Save the current theme to localStorage
+        localStorage.setItem("currentTheme", themes[currentThemeIndex]);
+
+        // Update the button text with the theme symbol
+        toggle.innerHTML = themeSymbols[currentThemeIndex];
     }
+
+    // Check if the user has previously selected a theme
+    const savedTheme = localStorage.getItem("currentTheme");
+    if (themes.includes(savedTheme)) {
+        currentThemeIndex = themes.indexOf(savedTheme);
+    }
+
 
     // Set the initial mode based on the user's preference
-    updateHighContrastMode();
+    updateTheme();
 
     toggle.addEventListener("click", function () {
-        toggleHighContrastMode();
+        toggleTheme();
     });
 
 </script>

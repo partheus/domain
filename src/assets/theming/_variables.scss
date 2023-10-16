@@ -3,7 +3,7 @@ $main-font: 'EB Garamond', serif;
 $sans-font: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 
 /* Theme colors */
-:root {
+.default, :root {
   --background-color: #fffcf6;
   --background-color-light: #ffe8f2;
   --text-color: #170808;
@@ -19,7 +19,14 @@ $sans-font: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial,
   --text-color: #ffe45b;
   --text-color-link: #21dab6;
   --accent-color: #f169b7;
+}
 
+.low-noir {
+  --background-color: #061a30;
+  --background-color-light: #08274a;
+  --text-color: #92daf5;
+  --text-color-link: #72e381;
+  --accent-color: #f97125;
 }
 
 //@media (prefers-color-scheme: dark) {
