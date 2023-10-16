@@ -1,4 +1,4 @@
-<footer role="contentinfo" class="ml-auto mr-auto">
+<footer role="contentinfo" class="ml-auto mr-auto mt-lg">
     <div class="footer__links">
         {% set footerItems = collections.footer | eleventyNavigation %}
             {#    <div class="dark-mode-toggle">#}
@@ -11,10 +11,13 @@
                         <a href="{{ item.url }}" title="{{ item.key }}">{{ item.key }}</a>
                     </li>
                 {%- endfor -%}
+                <li class="nav__item{{ ' active' if page.url === item.url }}">
+                    <a href="#" title="Go to top of page">top &#x21EA</a>
+                </li>
             </ul>
     </div>
 {# Insert newspaper.svg with newspaper-svg class here #}
-  <div class="newspaper-svg svg-color">
+  <div class="newspaper-svg svg-color mt-md">
       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
       <svg
               xmlns:dc="http://purl.org/dc/elements/1.1/"
