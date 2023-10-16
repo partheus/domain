@@ -1,15 +1,15 @@
 {% set navItems = collections.nav | eleventyNavigation %}
 <nav role="navigation" aria-label="main navigation">
-        <ul>
-            {%- for item in navItems %}
-                <li class="nav__item{{ ' active' if page.url === item.url }}">
-                    <a href="{{ item.url }}" title="{{ item.key }}">{{ item.key }}</a>
-                </li>
-            {%- endfor -%}
-        </ul>
+    <ul>
+        {%- for item in navItems %}
+            <li class="nav__item{{ ' active' if page.url === item.url }}">
+                <a href="{{ item.url }}" title="{{ item.key }}">{{ item.key }}</a>
+            </li>
+        {%- endfor -%}
+    </ul>
 
     <div class="theme-toggle-container" title="Change theme">
-            <span id="high-contrast-toggle">&#x2688;</span> <!-- Unicode icon -->
+        <span id="high-contrast-toggle">&#x2688;</span> <!-- Unicode icon -->
     </div>
 </nav>
 <script>
@@ -18,48 +18,55 @@
         document.getElementsByTagName("BODY")[0].classList.remove("no-js");
     }
 
-    // Theme toggle
-    const toggle = document.getElementById("high-contrast-toggle");
-    const body = document.body;
+    function initializeThemeToggle() {
+        // Theme toggle
+        const toggleSwitch = document.getElementById("high-contrast-toggle");
+        const body = document.body;
 
-    const themes = ["default", "low-noir", "high-contrast"];
-    let currentThemeIndex = 0; // Start with the default theme
+        const themes = ["default", "low-noir", "high-contrast"];
+        const themeSymbols = {
+            default: "&#x2688;",
+            "low-noir": "&#x2689;",
+            "high-contrast": "&#x2686;",
+        };
 
-    const themeSymbols = ["&#x2688;", "&#x2689;", "&#x2686;"];
+        let currentThemeIndex = 0;
 
-    // Function to toggle between themes
-    function toggleTheme() {
-        currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+        // Function to toggle between themes
+        function toggleTheme() {
+            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+            updateTheme();
+        }
+
+        // Function to update the current theme
+        function updateTheme() {
+            const currentTheme = themes[currentThemeIndex];
+
+            // Update the button text with the theme symbol
+            toggleSwitch.innerHTML = themeSymbols[currentTheme];
+
+            // Set the current theme class
+            body.className = currentTheme;
+
+            // Save the current theme to localStorage
+            localStorage.setItem("currentTheme", currentTheme);
+        }
+
+        // Check if the user has previously selected a theme
+        const savedTheme = localStorage.getItem("currentTheme");
+        if (themes.includes(savedTheme)) {
+            currentThemeIndex = themes.indexOf(savedTheme);
+        }
+
+        // Set the initial mode based on the user's preference
         updateTheme();
+
+        toggleSwitch.addEventListener("click", toggleTheme);
     }
 
-    // Function to update the current theme
-    function updateTheme() {
-        // Remove all theme classes
-        body.classList.remove(...themes);
-
-        // Add the current theme class
-        body.classList.add(themes[currentThemeIndex]);
-
-        // Save the current theme to localStorage
-        localStorage.setItem("currentTheme", themes[currentThemeIndex]);
-
-        // Update the button text with the theme symbol
-        toggle.innerHTML = themeSymbols[currentThemeIndex];
-    }
-
-    // Check if the user has previously selected a theme
-    const savedTheme = localStorage.getItem("currentTheme");
-    if (themes.includes(savedTheme)) {
-        currentThemeIndex = themes.indexOf(savedTheme);
-    }
+    // Call the function to initialize the theme toggle
+    initializeThemeToggle();
 
 
-    // Set the initial mode based on the user's preference
-    updateTheme();
-
-    toggle.addEventListener("click", function () {
-        toggleTheme();
-    });
 
 </script>
