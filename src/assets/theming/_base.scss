@@ -290,6 +290,7 @@ blockquote {
   font-size: 2.75em;
   display: flex;
   line-height: 69%;
+  cursor: grab;
 
   @include breakpoint-sm {
     top: 0;
