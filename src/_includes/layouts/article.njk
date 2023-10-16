@@ -1,5 +1,6 @@
 ---
 layout: base
+templateEngineOverride: njk, md
 ---
 <h1 class="article__title slide-up-half">{{ title }}</h1>
 <article class="article slide-up-half-slow">
@@ -175,6 +176,6 @@ layout: base
         >
     </div>
     {{ content | safe }}
-
-    <h4 class="mt-xl">Go back to <a href="/blog/">all entries</a>.  Or visit <a href="/writing">the writing section</a>.</h4>
 </article>
+
+<blockquote class="blockquote-lilac mt-xl"><h4 class="mt-lg">Go back to <a href="/blog/">all entries</a>.  Or visit <a href="/writing">the writing section</a>.</h4></blockquote>

@@ -9,7 +9,7 @@ tags:
 Fresh designs, old images. All images are credited to [pexels.com](https://pexels.com).
 
 > These are NOT links. To visit my works, click [here](/works).
-  <div class="gr_grid_container">
+  <div class="display-columns display-columns--three gr_grid_container">
     <div class="gr_grid_book_container">
       <img
       class="crane"
