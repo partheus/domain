@@ -142,7 +142,7 @@ header {
 }
 
 footer {
-  padding: 1em 0 5em 0;
+  padding: 1em 0 4em 0;
   border-top: 1px solid var(--background-color-light);
 }
 
@@ -159,10 +159,6 @@ header {
   @include breakpoint-lg {
     max-width: 70vw;
   }
-}
-
-footer span {
-  font-weight: 600;
 }
 
 nav ul li, footer ul li {
