@@ -2,7 +2,7 @@
 title: Ricochet
 date: 2016-12-11
 description:  A normal night in Paris
-tags: ["john-wick", "fanfic", "film"]
+tags: ["john-wick", "fiction", "fanfic", "film"]
 ---
 <blockquote class="blockquote-lilac aftercringe">Written in 2016</blockquote>
 

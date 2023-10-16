@@ -7,7 +7,18 @@ eleventyNavigation:
   key: writing
   order: 2
 ---
-{% set taglist = collections.writing | getFilterTagList %}
+- <a href="/blog"><h2 class="mb-md">View Blog here</h2></a>
+
+<blockquote>
+  <p>“Stories are important.
+    People think that stories are shaped by people. In fact, it's the other way around.
+    Stories exist independently of their players. If you know that, the knowledge is power.
+    Stories, great flapping ribbons of shaped space-time, have been blowing and uncoiling around the universe since the beginning of time. And they have evolved. The weakest have died and the strongest have survived and they have grown fat on the retelling...stories, twisting and blowing through the darkness.”</p>
+  <cite>― Terry Pratchett</cite>
+</blockquote>
+
+<h3 class="mb-md">This view contains a list of all blogposts tagged "fiction":</h3>
+{% set taglist = collections.fiction | getFilterTagList %}
 <ul class="article__list display-columns display-columns--two">
   {% for article in taglist | reverse %}
     <li class="article__item">
