@@ -175,7 +175,9 @@ templateEngineOverride: njk, md
         </svg
         >
     </div>
-    {{ content | safe }}
+    <div class="article__body">
+        {{ content | safe }}
+    </div>
 </article>
 
 <blockquote class="blockquote-lilac mt-xl"><h4 class="mt-lg">Go back to <a href="/blog/">all entries</a>.  Or visit <a href="/writing">the writing section</a>.</h4></blockquote>
