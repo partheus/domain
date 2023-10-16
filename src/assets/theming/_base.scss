@@ -98,6 +98,10 @@ nav {
   }
 }
 
+header {
+  min-height: fit-content;
+}
+
 .nav__floating-buttons {
   position: relative;
 }
