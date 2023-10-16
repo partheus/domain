@@ -1,11 +1,11 @@
 /*===============================*/
 /*          breakpoints          */
 /*===============================*/
-@mixin breakpoint-xxs {
+@mixin breakpoint-st-xxs {
   @media screen and (max-width: 319px) { @content };
 }
 
-@mixin breakpoint-xs {
+@mixin breakpoint-st-xs {
   @media screen and (max-width: 599px) { @content };
 }
 
