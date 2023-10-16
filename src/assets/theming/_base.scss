@@ -74,13 +74,9 @@ p {
 nav {
   ul {
     list-style: none;
-    padding: 0.35em 0.45em;
-    border-radius: 10em;
     z-index: 20;
-    background: hsl(313.8deg 54.92% 85.59% / 32%);
-    backdrop-filter: blur(20px) saturate(1.7);
     font-size: 90%;
-    -webkit-backdrop-filter: blur(20px) saturate(1.7);
+    display: flex;
 
     @include breakpoint-sm {
       padding: 0.5em 0.75em;
@@ -137,13 +133,12 @@ footer {
   max-width: 1440px;
 }
 
-header,
-footer {
-  padding: 2em 0 2em 0;
+header {
+  padding: 2em 0;
 }
 
 footer {
-  padding-bottom: 3.5em;
+  padding: 3.5em 0 6.5em 0;
 }
 
 header {
@@ -185,15 +180,13 @@ nav ul li, footer ul li {
 
   a {
     display: inline-block;
+    max-width: fit-content;
     text-decoration: none;
     padding: 0.2em 0.4em;
-    border: 2px dashed transparent;
-    border-radius: 1em;
     transition: all 0.3s ease-in-out;
   }
 
   a:hover {
-    border: 2px dashed var(--accent-color);
     transition: all 0.3s ease-in-out;
   }
 
