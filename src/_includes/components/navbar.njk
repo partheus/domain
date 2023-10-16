@@ -9,7 +9,7 @@
         </ul>
 
     <div class="theme-toggle-container" title="High contrast theme">
-            <span class="theme-toggle-icon" id="high-contrast-toggle">&#x29BF;</span> <!-- Unicode moon icon -->
+            <span id="high-contrast-toggle">&#x2688;</span> <!-- Unicode icon -->
     </div>
 </nav>
 <script>
@@ -34,7 +34,7 @@
             body.classList.remove("high-contrast");
             localStorage.setItem("highContrastMode", "false");
         }
-        toggle.innerHTML = body.classList.contains("high-contrast") ? "&#x29BE;" : "&#x29BF;";
+        toggle.innerHTML = body.classList.contains("high-contrast") ? "&#x2686;" : "&#x2688;";
 
     }
 
