@@ -40,9 +40,9 @@
 .article__list {
   list-style: lower-greek;
 
-
   @include breakpoint-sm-plus {
     max-width: 90ch;
+    margin: 0 auto;
   }
 }
 
