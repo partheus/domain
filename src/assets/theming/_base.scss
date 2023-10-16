@@ -299,6 +299,24 @@ blockquote {
   }
 }
 
+.snow-toggle-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 0.25em;
+  font-size: 2.75em;
+  display: flex;
+  line-height: 69%;
+  cursor: grab;
+
+  @include breakpoint-sm {
+    top: 0;
+    bottom: auto;
+    font-size: 2em;
+  }
+}
+
 .theme-toggle-icon {
   height: 30px;
   width: 30px;
