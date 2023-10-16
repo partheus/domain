@@ -5,8 +5,8 @@
         {% include "../components/navbar.njk" %}
 
         <div class="nav__floating-buttons">
-            <div class="logo svg-color home-logo ">
-                <a href="{{ '/' | url }}" title="Home" class=" {{'active' if page.url === '/' }}">
+            <div class="logo svg-color">
+                <a href="{{ '/' | url }}" title="Home" class="home-logo {{'active' if page.url === '/' }}">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                          width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
                          preserveAspectRatio="xMidYMid meet">
@@ -57,12 +57,6 @@ c-57 66 -170 245 -224 356 -216 446 -237 966 -60 1432 55 144 183 380 197 364
                     </svg>
                 </a>
             </div>
-            {#        <div class="theme-toggle">#}
-            {#            <label class="switch">#}
-            {#                <input type="checkbox" id="night-mode-toggle">#}
-            {#                <span class="slider round"></span>#}
-            {#            </label>#}
-            {#        </div>#}
         </div>
     </div>
 </header>
