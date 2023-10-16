@@ -1,6 +1,6 @@
 .listening-module {
   background-color: var(--background-color);
-  border: 2px dashed var(--accent-color);
+  border: 2px dashed var(--background-color-light);
   border-radius: 15px;
   padding: 1em;
   color: var(--text-color);
@@ -38,6 +38,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   filter: saturate(1.2);
   transition: all 0.2s ease-in-out;
+  border: 2px dashed var(--accent-color);
 
   .song-title a {
     cursor: pointer;
