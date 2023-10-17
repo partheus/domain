@@ -10,11 +10,9 @@ permalink: /colophon/
 ---
 <blockquote class="blockquote-lilac">
 
-**The site available for casual viewing. Pages are still being built and might break.** (view the repo <a href="https://github.com/partheus/domain/" alt="view repo">here</a>)
+**The site is available for casual viewing. Pages are still being built and might break.** (view the repo <a href="https://github.com/partheus/domain/" alt="view repo">here</a>)
 </blockquote>
 
-
-<div class="mb-md"></div>
 
 - # Design
 
@@ -24,14 +22,13 @@ Clipart and SVGs are from [OpenClipart](https://openclipart.org/).
 
 Mockups generated using [https://screenshot.rocks/](https://screenshot.rocks/).
 
-Primary font face is [Besley](https://indestructibletype.com/Besley.html) and secondary font face is [EB Garamond](https://github.com/octaviopardo/EBGaramond12/tree/master).
+Font faces are [Besley](https://indestructibletype.com/Besley.html) and [EB Garamond](https://github.com/octaviopardo/EBGaramond12/tree/master).
 
 - # Development
 
 This website was engineered on a MacBook Pro laptop (pink motif). It is written in HTML, Markdown, Nunjucks, CSS, and Javascript.
 
 [Eleventy](https://www.11ty.dev/) is used for static page generation. [Git](https://git-scm.com/) is used for version control. [Github](https://github.com) is used to store the repository. It is being tested and hosted on CloudFlare and Netlify.
-
 
 I used [PHPStorm](https://www.jetbrains.com/phpstorm/) for development; [Chromium Nightly](https://www.chromium.org/Home/) and [Firefox](https://www.mozilla.org/en-US/firefox/new/) were used for testing.
 

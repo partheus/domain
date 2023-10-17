@@ -1,12 +1,22 @@
 [
   {
-    "title": "Consectetur Adipiscing",
-    "imageUrl": "/assets/img/projects/2020site.png",
-    "linkUrl": "#"
+    "title": "Cana",
+    "imageUrl": "/assets/img/projects/cana.webp",
+    "projectUrl": "#"
   },
   {
-    "title": "Fames ac Turpis Egestas Fames ac Turpis Egestas",
-    "imageUrl": "/assets/img/projects/2020site.png",
-    "linkUrl": "#"
+    "title": "A Call to Listen",
+    "imageUrl": "/assets/img/projects/listen.webp",
+    "projectUrl": "#"
+  },
+  {
+    "title": "UHG",
+    "imageUrl": "/assets/img/projects/uhg.webp",
+    "projectUrl": "#"
+  },
+  {
+    "title": "UHG Sustainability",
+    "imageUrl": "/assets/img/projects/uhgsustain.webp",
+    "projectUrl": "#"
   }
 ]

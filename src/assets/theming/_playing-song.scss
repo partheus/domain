@@ -28,7 +28,7 @@
   .song-info {
     font-size: 70%;
 
-    @include breakpoint-md {
+    @include breakpoint-sm {
       font-size: 100%;
     }
   }
