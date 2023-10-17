@@ -339,3 +339,13 @@ blockquote {
   border-left: 6px solid var(--background-color-light);
   padding-left: 1.2em;
 }
+
+.book-links__container {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1em;
+
+  @include breakpoint-sm {
+    flex-direction: row;
+  }
+}
