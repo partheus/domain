@@ -2,7 +2,7 @@
 {% for article in articles | reverse %}
   <li class="article__item">
     <article class="article__preview">
-      {% include "./articleListItem.njk" %}
+      {% include "../macros/articleListItem.njk" %}
     </article>
   </li>
 {% endfor %}

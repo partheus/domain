@@ -8,18 +8,21 @@
     <link href="{{ '/assets/favicons/favicon-16x16.png' | url }}" type="image/png" sizes="16x16">
     <link href="{{ '/assets/favicons/site.webmanifest' | url }}" rel="manifest">
     <link href="{{ '/assets/favicons/safari-pinned-tab.svg' | url }}" rel="mask-icon" color="#d21687">
-    <link href="{{ '/assets/favicons/favicon.ico' | url }}">
+    <link href="{{ '/assets/favicons/favicon.ico' | url | safe }}">
     <meta name="msapplication-TileColor" content="#d21687">
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#fffcf6">
     <title>{{ title or metadata.title }}</title>
     {% include "../components/metadata.njk" %}
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="preload" href="{{ '/assets/theme.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="{{ '/assets/theme.css' | url }}">
 </head>
 
-<body>
+<body class="" onload="jscheck()">
 {% include "../components/header.njk" %}
 <main role="main">
     {{ content | safe }}

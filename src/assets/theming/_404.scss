@@ -1,0 +1,19 @@
+#current-error-url {
+  overflow-wrap: anywhere;
+}
+
+.error-container {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.error-image {
+  width: 180px;
+  height: 381px;
+}
+
+.error-message {
+  font-size: 24px;
+  margin-top: 20px;
+}

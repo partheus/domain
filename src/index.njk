@@ -1,0 +1,32 @@
+---
+layout: page
+eleventyNavigation:
+  key: home
+  order: 1
+templateEngineOverride: njk, md
+title: Parth Shiralkar
+description: >
+    Developer. Author. Likes daal.
+---
+
+
+{%  include "components/nowPlaying.njk" %}
+
+<div class="mt-lg"></div>
+
+### I [write](/blog) every now and then. Here's a featured article:
+
+<section class="mb-lg">
+    {%  include "components/featuredArticle.njk" %}
+</section>
+
+### "What happened to your old site?"
+It went into an archive. I redesign it every year or so. Two most recent iterations of my site:
+
+{%  include "components/archiveProjectCards.njk" %}
+
+<div class="mt-lg"></div>
+
+{%  include "components/readingMonth.njk" %}
+
+> Test 404 Error Page: [Not A Valid Link Here](/404.html)

@@ -7,14 +7,31 @@ eleventyNavigation:
   key: writing
   order: 2
 ---
-<h4>{{ description | safe }}</h4>
+<div class="listening-module ml-auto mr-auto mb-md slide-up-half">
+  <h2 class="mr-auto">Free ebooks:</h2>
+  <div class="book-links__container">
+    <a class="button button--secondary" href="/writing/caper" title="Caper">Action ebook</a>
+    <a class="button button--secondary" href="/writing/damage" title="Caper">Thriller ebook</a>
+  </div>
+</div>
 
-{% set taglist = collections.writing | getFilterTagList %}
+<a href="/blog"><blockquote class="mb-md blockquote-lilac slide-up-half-slow">View Blog here</blockquote></a>
+
+<blockquote class="slide-up-half-slow">
+  <p>“Stories are important.
+    People think that stories are shaped by people. In fact, it's the other way around.
+    Stories exist independently of their players. If you know that, the knowledge is power.
+    Stories, great flapping ribbons of shaped space-time, have been blowing and uncoiling around the universe since the beginning of time. And they have evolved. The weakest have died and the strongest have survived and they have grown fat on the retelling...stories, twisting and blowing through the darkness.”</p>
+  <cite>― Terry Pratchett</cite>
+</blockquote>
+
+<h3 class="mb-md">This view contains a list of all blogposts tagged "fiction":</h3>
+{% set taglist = collections.fiction | getFilterTagList %}
 <ul class="article__list display-columns display-columns--two">
   {% for article in taglist | reverse %}
     <li class="article__item">
       <article class="article__preview">
-        {% include "./_includes/components/articleListItem.njk" %}
+        {% include "./_includes/macros/articleListItem.njk" %}
       </article>
     </li>
   {% endfor %}

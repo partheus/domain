@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Blog"
+description: This view contains a list of all blogposts sorted from newest to oldest.
 eleventyNavigation:
     key: blog
     order: 2
@@ -8,10 +9,6 @@ pagination:
   data: collections.blog
   size: 40
   alias: articles
-tags: nav
 ---
-
-<div>This view contains a list of all blogposts sorted from newest to oldest.</div>
-
 {% include "./_includes/components/articleList.njk" %}
 
