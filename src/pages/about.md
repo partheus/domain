@@ -5,7 +5,7 @@ tags:
 eleventyNavigation:
     key: "about"
     order: 1
-description: Unusual Discworld character
+description: Discworld character and web developer.
 permalink: /about/
 ---
 Whatever they are saying about me is mostly true on weekdays!
