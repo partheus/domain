@@ -1,0 +1,13 @@
+<div class="listening-module mt-lg ml-auto mr-auto slide-up-half-slow">
+    <h2 class="mb-sm mt-sm">Reading lately:</h2>
+    <div class="display-columns display-columns--four">
+        {% for card in readingMonth %}<div class="reading-card mt-sm" tabindex="0">
+            <img src="{{ card.bookCoverUrl }}">
+            <a class="reading-card__info" href="{{ card.bookUrl | url }}" target="_blank" title="{{ card.title }}" tabindex="0"><h3
+                        class="mt-xs">{{ card.title }}</h3>
+            <p>{{ card.author }}</p></a>
+            </div>
+        {% endfor %}
+    </div>
+    <h4 class="mt-md mb-lg article__preview__header"><a href="https://app.thestorygraph.com/profile/sparth" title="Storygraph">Add me on StoryGraph!</a></h4>
+</div>

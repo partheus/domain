@@ -87,4 +87,18 @@ $spacing: (
       grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
     }
   }
+
+  &--four {
+    @include breakpoint-sm {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+
+    @include breakpoint-md {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for tablet */
+    }
+
+    @include breakpoint-lg {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+    }
+  }
 }

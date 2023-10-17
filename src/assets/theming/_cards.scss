@@ -22,6 +22,10 @@
     max-height: 35vh;
   }
 
+  @include breakpoint-st-xs {
+    max-height: 250px;
+  }
+
   .card__title, .card__description, .card-link {
     transition: transform 0.4s; /* Apply the same transition duration to all elements */
   }
@@ -92,4 +96,65 @@
   transform: translateY(0.5em) translateX(0.25em); /* Move the image down on hover */
   filter: saturate(1.8);
   transition: all 0.3s ease-in-out;
+}
+
+// Reading time
+.reading-card {
+  padding: 0.75em;
+  background: var(--background-color-light);
+  box-shadow: 0 0 2px var(--text-color);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+  position: relative;
+  overflow: hidden;
+  filter: saturate(0.5);
+
+  &:hover {
+    transform: translate3d(0, -0.25em, 0);
+    box-shadow: 0 0 10px var(--text-color);
+    filter: saturate(1.1);
+
+    .reading-card__info::after {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    img {
+      transform: translateX(0.5em); /* Move the image down on hover */
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 10px var(--text-color);
+    }
+  }
+
+  img {
+    width: 75%;
+    max-height: 300px;
+    margin-right: auto;
+    border-radius: 0.45em;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    filter: saturate(0.5);
+    object-fit: cover;
+  }
+
+  h3 {
+    color: var(--text-color);
+    font-size: 1em;
+  }
+
+  &__info {
+    margin-top: 0.2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info::after {
+    content: '\2924';
+    right: 0.5em;
+    bottom: 0.5em;
+    position: absolute;
+    font-size: 140%;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
 }
