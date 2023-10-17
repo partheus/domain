@@ -331,7 +331,7 @@ blockquote {
 }
 
 .article__body, .page__content {
-  p {
+  p:not(.article__preview__description) {
     font-size: 110%;
   }
 }

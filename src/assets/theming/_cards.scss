@@ -13,7 +13,7 @@
   &:hover {
     transform: translate3d(0, -0.25em, 0);
     box-shadow: 0 0 10px var(--text-color);
-    filter: invert(1);
+    background: var(--text-color);
   }
 
   @include breakpoint-md {
@@ -43,7 +43,7 @@
     max-width: fit-content;
     transition: all 0.3s;
     cursor: pointer;
-    color: var(--text-color-link);
+    color: var(--background-color-light);
   }
 
   &:hover .card__title::after {
@@ -75,7 +75,11 @@
     position: absolute;
     font-size: 140%;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  &__title:hover {
+    color: yellow;
   }
 
   a {
@@ -93,12 +97,11 @@
 
   @include breakpoint-md {
     max-width: 30vw;
-
   }
 }
 
 .card:hover .card-image {
   transform: translateY(0.5em) translateX(0.25em); /* Move the image down on hover */
   filter: saturate(1.8);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
