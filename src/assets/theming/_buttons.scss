@@ -14,10 +14,6 @@
     border: 2px solid var(--text-color-link);
   }
 
-  &:hover > a {
-    filter: hue-rotate(180deg);
-  }
-
   &--primary {
     background-color: var(--text-color);
     color: var(--background-color);
@@ -32,6 +28,14 @@
     background-color: var(--accent-color);
     color: var(--background-color-light);
   }
+
+  a {
+    font-size: 0.7em;
+  }
+}
+
+a.button {
+  font-size: 0.7em;
 }
 
 .button:after {
