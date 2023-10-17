@@ -12,8 +12,9 @@ description: You've arrived at the page for free copies of my self-published e-b
 
 <div class="display-columns display-columns--two display-columns__close-gap">
 <div class="reading-card mt-sm">
-<a class="reading-card__info" href="https://www.goodreads.com/book/show/61141775-the-midtown-caper" target="_blank" title="Caper" tabindex="0">
 <img src="/assets/img/works/caper.png" loading="lazy" decoding="async" alt="midtown caper" style="max-height: none;">
+<a class="reading-card__info" href="https://www.goodreads.com/book/show/61141775-the-midtown-caper" target="_blank" title="Caper" tabindex="0">
+Goodreads
 </a>
 </div>
 <div>
