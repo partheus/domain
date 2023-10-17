@@ -1,6 +1,8 @@
 [
   {
     "title": "Cana",
+    "description": "frontend dev work",
+    "stack": ["wordpress", "sql"],
     "imageUrl": "/assets/img/projects/cana.webp",
     "projectUrl": "#"
   },
