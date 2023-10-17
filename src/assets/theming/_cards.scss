@@ -146,14 +146,18 @@
     right: 0.25em;
     bottom: 0.25em;
     position: absolute;
-    border-top: 3px solid var(--accent-color);
-    font-size: 240%;
+    font-size: 220%;
     opacity: 0;
     transition: all 0.3s ease;
 
     @include breakpoint-sm {
       right: 0.5em;
       bottom: 0.5em;
+      font-size: 140%;
     }
+  }
+
+  .reading-card__link::after:hover {
+    filter: invert(1);
   }
 }
