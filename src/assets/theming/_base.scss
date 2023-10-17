@@ -278,7 +278,6 @@ blockquote {
     }
   }
 
-
 }
 
 .theme-toggle-container {
@@ -287,7 +286,7 @@ blockquote {
   bottom: 0;
   z-index: 100;
   padding: 0.25em;
-  font-size: 2.75em;
+  font-size: 2.5em;
   display: flex;
   line-height: 69%;
   cursor: grab;
@@ -334,4 +333,9 @@ blockquote {
   p:not(.article__preview__description) {
     font-size: 110%;
   }
+}
+
+.featured__post {
+  border-left: 6px solid var(--background-color-light);
+  padding-left: 1.2em;
 }
