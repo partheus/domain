@@ -71,6 +71,13 @@ $spacing: (
     column-gap: 2em;
   }
 
+  &__close-gap {
+    @include breakpoint-md-plus {
+      row-gap: 1em;
+      column-gap: 1em;
+    }
+  }
+
   &--two {
     @include breakpoint-md {
       grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */

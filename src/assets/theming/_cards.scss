@@ -34,7 +34,7 @@
     transform: translateY(-0.15em); /* Adjust the value for the desired slide-up distance */
   }
 
-  &:hover .card__title {
+  &:hover .card__title a {
     border-bottom: 3px solid var(--accent-color);
     max-width: fit-content;
     transition: all 0.3s;
@@ -45,10 +45,6 @@
   &:hover .card__title::after {
     opacity: 1;
     transition: opacity 0.3s ease;
-  }
-
-  .card__title {
-    color: var(--text-color);
   }
 
   &__link {
@@ -74,12 +70,9 @@
     transition: all 0.3s ease;
   }
 
-  &__title:hover {
-    color: yellow;
-  }
-
   a {
     text-decoration: none;
+    color: var(--text-color);
   }
 }
 
