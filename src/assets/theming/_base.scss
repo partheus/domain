@@ -274,7 +274,7 @@ blockquote {
     }
 
     @include breakpoint-lg {
-      max-width: 65vw;
+      min-width: 41vw;
     }
   }
 

@@ -7,9 +7,9 @@
   transform: translateY(0);
   position: relative;
   overflow: hidden;
-  min-height: 30vh;
+  min-height: 20vh;
   min-width: 30vw;
-  max-height: 330px;
+  height: 330px;
 
   &:hover {
     transform: translate3d(0, -0.25em, 0);
@@ -17,8 +17,9 @@
     background: var(--text-color);
   }
 
-  @include breakpoint-md-plus {
-    min-height: 40vh;
+  @include breakpoint-md {
+    min-width: auto;
+    max-height: 35vh;
   }
 
   .card__title, .card__description, .card-link {
