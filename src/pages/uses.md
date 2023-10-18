@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Uses"
 description: "Tools and kits and tips and tricks"
 date: 2023-10-11

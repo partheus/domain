@@ -52,6 +52,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('page', 'layouts/page')
   eleventyConfig.addLayoutAlias('article', 'layouts/article')
   eleventyConfig.addLayoutAlias('base', 'layouts/base')
+  eleventyConfig.addLayoutAlias('slim', 'layouts/slim')
 
 
   /*=================*/

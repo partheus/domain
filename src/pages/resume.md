@@ -1,4 +1,5 @@
 ---
+layout: slim
 title: Resume
 description: What I've done (Linkin Park)
 permalink: /resume/
@@ -33,10 +34,11 @@ developer
     - Advanced Front End Development (React, Vue, Angular)
 
 - ## Languages
-    - English (Fluent)
+    - Marathi (Native)
+    - English (Fluent) 
     - Spanish (Beginner)
     - Morporkian (Native)
-    - Simlish (Native)
+
 
 </div>
 
