@@ -287,7 +287,7 @@ blockquote {
   bottom: 0;
   z-index: 100;
   padding: 0.25em;
-  font-size: 2.5em;
+  font-size: 2em;
   display: flex;
   line-height: 69%;
   cursor: grab;
@@ -295,7 +295,6 @@ blockquote {
   @include breakpoint-sm {
     top: 0;
     bottom: auto;
-    font-size: 2em;
   }
 }
 
