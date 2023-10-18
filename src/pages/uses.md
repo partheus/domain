@@ -8,6 +8,7 @@ eleventyNavigation:
     key: uses
     order: 3
 templateEngineOverride: njk, md
+permalink: /uses/
 ---
 > What is a [uses page](https://wesbos.com/uses)? It answers the question "So what do you use to navigate life and the Internet?"
 

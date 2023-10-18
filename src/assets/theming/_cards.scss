@@ -90,6 +90,8 @@
 
 // Reading time
 .reading-card {
+  display: flex;
+  flex-direction: column;
   padding: 0.75em;
   background: var(--background-color-light);
   box-shadow: 0 0 2px var(--text-color);

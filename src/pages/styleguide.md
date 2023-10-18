@@ -4,6 +4,7 @@ description: 'A simple text styleguide for layout and UI practice. Includes base
 date: Last modified
 tags:
     - footer
+permalink: /styleguide/
 ---
 
 # Header 1
