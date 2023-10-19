@@ -82,7 +82,6 @@ $spacing: (
   &--two {
     @include breakpoint-md {
       grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
-      min-width: 70vw;
     }
   }
 

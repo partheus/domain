@@ -5,16 +5,17 @@ permalink: /writing/damage/
 description: You've arrived at the page for free copies of my self-published e-book
 ---
 
-<div class="listening-module mb-lg">
+<div class="listening-module ml-auto mr-auto mb-lg">
 <p>A private detective and his apprentice are hired to figure out the mystery behind strange, gruesome disappearances in a small Iowan town.</p>
 <h3 class="mt-sm">Free download below.</h3>
 </div>
 
 <div class="display-columns display-columns--two display-columns__close-gap">
 <div class="reading-card mt-sm">
-<img src="/assets/img/works/damage.png" loading="lazy" decoding="async" alt="midtown caper" style="max-height: none;">
-<a class="reading-card__info" href="https://www.goodreads.com/book/show/59850757-axis-of-damage" target="_blank" title="Axis of Damage" tabindex="0">
-Goodreads
+<img src="/assets/img/works/damage.webp" loading="lazy" decoding="async" alt="Axis of Damage" style="max-height: 70vh;" class="ml-auto mr-auto">
+<a class="mt-md ml-auto mr-auto reading-card__link" href="https://www.goodreads.com/book/show/59850757-axis-of-damage" target="_blank" title="Axis of Damage" tabindex="0">
+
+#### Goodreads
 </a>
 </div>
 <div>

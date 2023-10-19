@@ -5,14 +5,14 @@ tags:
 eleventyNavigation:
     key: "about"
     order: 1
-description: Discworld character and web developer.
+description: Unlisted character from Discworld
 permalink: /about/
 ---
 Whatever they are saying about me is mostly true on weekdays!
 
 I love [reading](https://goodreads.com/parthshiralkar) and [writing](/writing).
 
-I am a [web developer](/colophon) and [designer](https://parth-2020.netlify.app/design/).
+I am a [web developer](/code) and [designer](/colophon).
 
 Big fan of noise that sounds good. Here's my [SoundCloud](https://soundcloud.com/bhatji).
 

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Uses"
 description: "Tools and kits and tips and tricks"
 date: 2023-10-11
@@ -9,6 +8,7 @@ eleventyNavigation:
     key: uses
     order: 3
 templateEngineOverride: njk, md
+permalink: /uses/
 ---
 > What is a [uses page](https://wesbos.com/uses)? It answers the question "So what do you use to navigate life and the Internet?"
 
