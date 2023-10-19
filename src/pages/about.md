@@ -10,7 +10,7 @@ permalink: /about/
 ---
 Whatever they are saying about me is mostly true on weekdays!
 
-I love [reading](https://goodreads.com/parthshiralkar) and [writing](/writing).
+I love [reading](https://goodreads.com/parthshiralkar) and [writing](/writing) and [climbing](/climbing).
 
 I am a [web developer](/code) and [designer](/colophon).
 
