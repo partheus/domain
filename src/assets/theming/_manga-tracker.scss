@@ -23,13 +23,16 @@
       }
 
       img {
+        height: 16em;
         width: 100%;
-        height: auto;
         object-fit: cover;
         border-radius: 5px;
-        max-height: 300px;
         filter: saturate(0.2);
         transition: all 0.3s ease-in-out;
+
+        @include breakpoint-sm {
+          height: 12em;
+        }
       }
 
       h3 {
