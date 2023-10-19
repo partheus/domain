@@ -1,0 +1,32 @@
+{
+  "currentlyReading": [
+    {
+      "title": "Jojo's Bizarre Adventure Part 7: Steel Ball Run",
+      "author": "Hirohiko Araki",
+      "currentChapter": 100,
+      "totalChapters": 100,
+      "coverImageUrl": "https://cdn.myanimelist.net/images/manga/3/179882.jpg"
+    },
+    {
+      "title": "Jujustu Kaisen",
+      "author": "Gege Akutami",
+      "currentChapter": 100,
+      "totalChapters": "Ongoing",
+      "coverImageUrl": "https://cdn.myanimelist.net/images/manga/3/210341.jpg"
+    },
+    {
+      "title": "One Piece",
+      "author": "Eiichiro Oda",
+      "currentChapter": 100,
+      "totalChapters": "Ongoing",
+      "coverImageUrl": "https://cdn.myanimelist.net/images/manga/3/55539.jpg"
+    },
+    {
+      "title": "Sakamoto Days",
+      "author": "Yuto Suzuki",
+      "currentChapter": 100,
+      "totalChapters": "Ongoing",
+      "coverImageUrl": "https://cdn.myanimelist.net/images/manga/1/242919.jpg"
+    }
+  ]
+}
