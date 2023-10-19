@@ -9,7 +9,6 @@
       color: var(--text-color);
       border-radius: 5px;
       padding: 1em;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease-in-out;
 
       &:hover {
@@ -18,7 +17,8 @@
         transition: all 0.3s ease-in-out;
 
         img {
-            filter: saturate(1.8);
+          filter: saturate(1.2);
+          transition: all 0.3s ease-in-out;
         }
       }
 
@@ -28,7 +28,8 @@
         object-fit: cover;
         border-radius: 5px;
         max-height: 300px;
-        filter: saturate(1.2);
+        filter: saturate(0.2);
+        transition: all 0.3s ease-in-out;
       }
 
       h3 {
