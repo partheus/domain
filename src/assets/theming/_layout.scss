@@ -17,29 +17,29 @@ $spacing: (
 
 @each $key, $unit in $spacing {
   .my-#{$key} {
-    margin-top: $unit;
-    margin-bottom: $unit;
+    margin-top: $unit !important;
+    margin-bottom: $unit !important;
   }
 
   .mx-#{$key} {
-    margin-left: $unit;
-    margin-right: $unit;
+    margin-left: $unit !important;
+    margin-right: $unit !important;
   }
 
   .mt-#{$key} {
-    margin-top: $unit;
+    margin-top: $unit !important;
   }
 
   .mb-#{$key} {
-    margin-bottom: $unit;
+    margin-bottom: $unit !important;
   }
 
   .ml-#{$key} {
-    margin-left: $unit;
+    margin-left: $unit !important;
   }
 
   .mr-#{$key} {
-    margin-right: $unit;
+    margin-right: $unit !important;
   }
 
 }
