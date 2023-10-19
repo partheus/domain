@@ -2,11 +2,6 @@
 title: "Uses"
 description: "Tools and kits and tips and tricks"
 date: 2023-10-11
-tags:
-  - nav
-eleventyNavigation:
-    key: uses
-    order: 3
 templateEngineOverride: njk, md
 permalink: /uses/
 ---

@@ -3,6 +3,11 @@ title: Now
 description: Updates, updates, updates, updates
 permalink: /now/
 date: 2023-10-14
+tags: 
+    - nav
+eleventyNavigation:
+  key: now
+  order: 4
 ---
 > What is a [now page](https://nownownow.com/about)? It answers the question "So what are you up to these days?"
 

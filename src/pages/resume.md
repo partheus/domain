@@ -1,5 +1,4 @@
 ---
-layout: slim
 title: Resume
 description: What I've done (Linkin Park)
 permalink: /resume/
