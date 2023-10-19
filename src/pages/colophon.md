@@ -10,9 +10,17 @@ permalink: /colophon/
 ---
 <blockquote class="blockquote-lilac">
 
-**The site is available for casual viewing. Pages are still being built and might break.** (view the repo <a href="https://github.com/partheus/domain/" alt="view repo">here</a>)
+**The site is available for casual viewing. Pages are still being built and might break.** (view the repo <a href="https://github.com/partheus/domain/" alt="view repo" target="_blank">here</a>)
 </blockquote>
 
+
+- # Development
+
+This website was engineered on a Dell G5 gaming laptop (red motif) and MacBook Pro laptop (pink motif). It is written in HTML, Markdown, Nunjucks, CSS, and Javascript.
+
+[Eleventy](https://www.11ty.dev/) is used for static page generation. [Git](https://git-scm.com/) is used for version control. [Github](https://github.com) is used to store the repository. It is being tested and hosted on CloudFlare and Netlify.
+
+I used [PHPStorm](https://www.jetbrains.com/phpstorm/) for development; [Chromium Nightly](https://www.chromium.org/Home/) and [Firefox](https://www.mozilla.org/en-US/firefox/new/) were used for testing.
 
 - # Design
 
@@ -24,18 +32,10 @@ Mockups generated using [https://screenshot.rocks/](https://screenshot.rocks/).
 
 Font faces are [Besley](https://indestructibletype.com/Besley.html) and [EB Garamond](https://github.com/octaviopardo/EBGaramond12/tree/master).
 
-- # Development
-
-This website was engineered on a MacBook Pro laptop (pink motif). It is written in HTML, Markdown, Nunjucks, CSS, and Javascript.
-
-[Eleventy](https://www.11ty.dev/) is used for static page generation. [Git](https://git-scm.com/) is used for version control. [Github](https://github.com) is used to store the repository. It is being tested and hosted on CloudFlare and Netlify.
-
-I used [PHPStorm](https://www.jetbrains.com/phpstorm/) for development; [Chromium Nightly](https://www.chromium.org/Home/) and [Firefox](https://www.mozilla.org/en-US/firefox/new/) were used for testing.
-
  
 <hr class="mt-lg mb-md" />
 
-- ## Some resources I found helpful:
+- ## Main resources:
 
 11ty Main Docs: [11tyJS](https://www.11ty.dev/docs/)
 
