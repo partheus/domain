@@ -10,23 +10,29 @@ description: >
 ---
 
 
-{%  include "components/nowPlaying.njk" %}
+{% include "components/nowPlaying.njk" %}
 
 <div class="mt-lg"></div>
 
 ### I [write](/blog) every now and then. Here's a featured article:
 
 <section class="mb-lg">
-    {%  include "components/featuredArticle.njk" %}
+    {% include "components/featuredArticle.njk" %}
 </section>
+
+<div class="mt-lg"></div>
+
+### I also [climb](/climbing) every now and then. Some recent climbs:
+
+{% include "components/featuredClimbsTable.njk" %}
+
+<div class="mt-lg"></div>
+
+{% include "components/readingMonth.njk" %}
+
+<div class="mt-lg"></div>
 
 ### "What happened to your old site?"
 It went into an archive. I redesign it every year or so. Two most recent iterations of my site:
 
-{%  include "components/archiveProjectCards.njk" %}
-
-<div class="mt-lg"></div>
-
-{%  include "components/readingMonth.njk" %}
-
-> Test 404 Error Page: [Not A Valid Link Here](/404.html)
+{% include "components/archiveProjectCards.njk" %}

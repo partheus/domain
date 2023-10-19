@@ -1,5 +1,5 @@
 <div class="listening-module ml-auto mr-auto slide-up-half-slow">
-    <h2 class="mb-sm">Reading lately:</h2>
+    <h3 class="mb-sm mt-sm">Reading lately:</h3>
     <div class="display-columns display-columns--two display-columns__close-gap">
         {% for card in readingMonth %}<div class="reading-card mt-sm">{# <img src="{{ card.bookCoverUrl }}" loading="lazy" decoding="async" alt="{{ card.title }}">#}<div class="reading-card__info"><h3>{{ card.title }}</h3>
             <p>{{ card.author }}</p>
@@ -7,6 +7,6 @@
             </div>
             </div>
         {% endfor %}
+        <p></p>
     </div>
-    <blockquote class="mt-md mb-lg article__preview__header"><a href="https://app.thestorygraph.com/profile/sparth" title="Storygraph">Add me on StoryGraph!</a></blockquote>
 </div>
