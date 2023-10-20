@@ -7,13 +7,13 @@ eleventyNavigation:
   order: 4
 ---
 
-<h2 class="mb-lg max-content-width">Recent Climbs:</h2>
+<h2 class="mb-md max-content-width">Recent Climbs:</h2>
 
 {% include "./_includes/components/climbsTable.njk" %}
 
 <div class="mb-lg"></div>
 
-<h2 class="mb-lg max-content-width">Articles tagged under "climbing"</h2>
+<h2 class="mb-md max-content-width">Articles tagged under "climbing"</h2>
 
 {% set taglist = collections.climbing | getFilterTagList %}
 <ul class="article__list display-columns display-columns--two">
