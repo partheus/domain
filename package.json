@@ -6,7 +6,7 @@
   "scripts": {
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "sass --watch src/assets/theming:_site/assets",
-    "build:eleventy": "eleventy",
+    "build:eleventy": "BUILD_DATE=$(date +'%Y-%m-%d %H:%M:%S') eleventy",
     "build:sass": "sass  --no-source-map --style=compressed src/assets/theming:_site/assets",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:*",
@@ -15,6 +15,10 @@
   "author": {
     "name": "Parth Shiralkar",
     "url": "https://github.com/@partheus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/partheus/domain.git"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
