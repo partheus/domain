@@ -74,6 +74,7 @@ module.exports = function(eleventyConfig) {
   /*=================*/
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode)
 
+  eleventyConfig.addNunjucksGlobal("BUILD_DATE", process.env.BUILD_DATE);
 
 
   return {
