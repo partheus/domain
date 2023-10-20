@@ -6,6 +6,13 @@
   text-align: left;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  column-gap: 0.25em;
+
+  @include breakpoint-sm {
+    column-gap: 2em;
+  }
 }
 
 .error-image {
